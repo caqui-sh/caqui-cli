@@ -122,7 +122,7 @@ Verify the correctness of all changes by following the formal test execution and
     - If a minor E2E test alignment is necessary to match system boundary updates, you must adhere strictly to these constraints:
       > [!CAUTION]
       > **TEST IMMUTABILITY & SPECIFICATION INTEGRITY**
-      > * **The Immutable Step Name**: The **step name** (which serves as the high-level specification of the underlying step body and logic) **MUST NEVER BE CHANGED** under any circumstances. It is the absolute anchor of the test invariant.
+      > * **The Immutable Step Identifier**: The unique 6-character identifier token in the test/step name **MUST NEVER BE CHANGED** under any circumstances, serving as the permanent anchor of the test invariant. Other name segments are malleable and may be updated to reflect the modified test structure.
       > * **Permitted Aesthetic Alterations**: Minor aesthetic adjustments or alterations within the step body are acceptable *only* when absolutely necessary to align with system boundary updates.
       > * **No Dilution or Bending**: Any step body alteration **must not** weaken, bypass, or bend the core functional assertions or logical rigor of the test. Commenting out assertions, deleting logic boundaries, or disabling test checks to bypass failures remains strictly prohibited.
 ```

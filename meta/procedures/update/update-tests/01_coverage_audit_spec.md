@@ -18,3 +18,5 @@ This document defines the rules for auditing the traceability and coverage align
 * **Non-Redundant Validation Paths**:
   - Test cases must be mutually exclusive with respect to their verification targets.
   - Duplicate validation paths targeting identical state transitions and input combinations are prohibited.
+* **Existing Test Case Refinement**:
+  - If a scenario in the companion Use-Case Matrix defines an `existingTestStep`, the test specification must reference and update the preexisting E2E test case or step (matching its 6-character identifier) rather than introducing a new, redundant test path.

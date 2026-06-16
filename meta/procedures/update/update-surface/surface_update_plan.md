@@ -20,8 +20,10 @@ Establish the system-level boundary inputs and outputs.
 Formulate the detailed constraints, payload structures, and operational behaviors for each targeted boundary interface.
 
 * **Step 2.1: Define Inputs & Preconditions**
-  - Specify input structures, constraints, schemas, and preconditions under Section 2 for each modified or introduced interface.
+  - Specify input structures, constraints, boundary contracts, and preconditions under Section 2 for each modified or introduced interface.
   - Reference established codebase patterns aligning with the update's conventions.
 * **Step 2.2: Define Outputs & Postconditions**
   - Specify nominal and exceptional output structures, diagnostic metadata, and side-effects under Section 2 for each interface.
   - Integrate exceptional outcomes directly within outputs and postconditions, ensuring error payloads omit internal codebase details.
+* **Step 2.3: Document Transition Mapping (For Modified Surfaces)**
+  - For any existing interface undergoing a boundary modification, detail the mapping from the legacy interface contract to the modified boundary surface-area.

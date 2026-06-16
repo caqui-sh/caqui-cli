@@ -19,7 +19,7 @@ This document defines the rules for auditing the format, template compliance, an
        - `### 1.2 Outbound Vectors`
     2. `## 2. Interface Contracts`
        - `### [Interface Name]`
-         - Must use standard keys: `Inputs & Preconditions` and `Outputs & Postconditions`.
+         - Must use standard keys: `Inputs & Preconditions`, `Outputs & Postconditions`, and optionally `Transition & Structural Mapping` (mandatory for modified boundary interfaces).
 * **Syntax & Link Constraints**:
   - All hyperlinks and file references must be root-relative.
   - Companion references must specify valid workspace paths matching the target directory structure (`/meta/history/<branch_name>_<version>/<feature_name>_<suffix>.[md|json]`), regardless of active resolution.

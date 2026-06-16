@@ -16,7 +16,8 @@ This document defines the rules for auditing the schema conformance, structural 
   - **Leaf Nodes**: Terminal execution steps must contain both `preconditions` and `assertions` (arrays of strings) and must omit the `steps` field.
   - **Parent Nodes**: Grouping steps must contain a non-empty `steps` array of recursively conforming step objects.
 * **Strict Type and Field Rules**:
-  - `name`, `e2e_path`, and `description` must be string types.
+  - `name`, `kind`, `e2e_path`, and `description` must be string types.
+  - `kind` must equal either `"new"` or `"modification"`.
   - `preconditions` and `assertions` must be string arrays.
   - `steps` must be an array of objects.
   - Undocumented or custom fields are prohibited.

@@ -19,6 +19,10 @@ Set up the test structure in code, utilizing nested steps to map the hierarchica
     - Invoke the child nested steps on that parent context.
 * **Step 1.3: Synchronize Labels and Identifiers**
   - Ensure the `name` argument of each test step matches the exact string from the `name` field of the corresponding JSON item 1-to-1.
+* **Step 1.4: Handle Test Modifications vs. New Additions**
+  - Read the `kind` property for each test case/step from the declarative test specification.
+  - **For `"modification"`**: Locate the preexisting test case/step in the target file using its unique, legacy 6-character identifier. Modify and update the existing implementation block in place (inputs, preconditions, and assertions) rather than creating a new test block. Keep the 6-character ID token identical, but update the remaining name segments to reflect the new test structure.
+  - **For `"new"`**: Implement a brand-new test block with a newly generated name and a new 6-character identifier.
 
 ### Hierarchical Deno Test Structure Template:
 ```typescript

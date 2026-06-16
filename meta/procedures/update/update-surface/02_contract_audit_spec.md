@@ -16,3 +16,6 @@ This document defines the rules for auditing interface contracts and payload sch
   - Exceptional schemas must carry diagnostic metadata without leaking internal details.
 * **Boundary Precondition Mapping**:
   - The specification must focus exclusively on mapping direct boundary preconditions to their corresponding exceptional outputs.
+* **Transition Mapping for Modified Interfaces**:
+  - For any interface that modifies an established boundary contract, the specification must contain a detailed structural translation map explaining how legacy parameters and structures map to the new interface contract.
+

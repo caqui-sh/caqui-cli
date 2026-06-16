@@ -21,6 +21,7 @@ To ensure verifiability and traceability, every concrete update test specificati
   - References to internal codebase structures or implementation details are prohibited.
 * **Behavioral Traceability**:
   - Test spec entries must identify the scenarios they validate.
+  - If a scenario in the companion Use-Case Matrix defines an `existingTestStep`, the test specification must target that preexisting test case/step (matching its unique 6-character alphanumeric identifier) and outline the updates to its preconditions and assertions rather than introducing a new, redundant test path.
 * **Test File Cohesion**:
   - Test cases should target a fitting preexisting test file by default, permitting new test files only when necessary to avoid shoehorning.
 * **Coverage Mapping**:
@@ -44,6 +45,7 @@ All test scenarios must be compiled into a single JSON array. Each object in the
     "name": "<tokenized_test_case_name>",
     "e2e_path": "<relative_path_to_test_file>.e2e.ts",
     "description": "<scenario_purpose_description>",
+    "kind": "new | modification",
     "trace_references": [
       "<matrix_scenario_identifier>"
     ],
@@ -56,6 +58,7 @@ All test scenarios must be compiled into a single JSON array. Each object in the
     "steps": [
       {
         "name": "<tokenized_substep_name>",
+        "kind": "new | modification",
         "trace_references": [
           "<matrix_scenario_identifier>"
         ],
@@ -78,6 +81,7 @@ Each object in the JSON array must contain the following fields:
 | Field Name | Type | Required | Description |
 | :--- | :--- | :---: | :--- |
 | `name` | String | Yes | The tokenized test or step name following the labeling standard. |
+| `kind` | String | Yes | Specifies whether the test or step is newly added (`new`) or a modification of a preexisting test (`modification`). |
 | `e2e_path` | String | Yes (for root) | The relative path to the physical test execution file (must end in `.e2e.ts`). Required for top-level objects. |
 | `description` | String | No | Description of the test scenario's purpose. |
 | `trace_references` | Array of Strings | Yes | Mapped scenario identifiers from the Use-Case Matrix. |
@@ -85,12 +89,14 @@ Each object in the JSON array must contain the following fields:
 | `assertions` | Array of Strings | Yes (for leaf) | Declarative statements defining the validated invariants or outcomes. |
 | `steps` | Array of Objects | No | Array of nested child test step objects conforming recursively to this schema. |
 
----
-
 ## 3. Payload Integrity Invariants
 
 * **Identifier & Labeling Compliance**:
   - All test and step names must strictly conform to the repository labeling standard.
+* **Existing Test Modification**:
+  - When `kind` is `"modification"`, the test/step `name` must preserve its legacy 6-character identifier token, while all other segments are malleable and may be updated to reflect the modified test structure.
+  - The `e2e_path` must match the file path of the preexisting E2E test execution file.
+  - The `preconditions` and `assertions` must be updated in place to assert the modified behavioral outcomes, replacing legacy assertions.
 * **Content Completion**:
   - All fields must be complete and fully defined.
   - Symbolic representations of value domains are permitted.

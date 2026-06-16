@@ -14,14 +14,15 @@ To ensure exact interface compliance, every concrete surface-area specification 
   - The specification must focus exclusively on the interaction contracts at the system's external boundaries.
   - All references to internal codebase structure or implementation details are strictly prohibited.
 * **Delta-Focused Contracts**:
-  - Document only the added, modified, or deleted boundary surfaces and schemas. Unchanged contracts must be omitted.
+  - Document only the added, modified, or deleted boundary surfaces and interface contracts. Unchanged contracts must be omitted.
+  - For modified boundary interfaces, the specification must provide a clear transition mapping detailing how the legacy interface contract translates to the new boundary interface.
 * **Structural Precision**:
   - Payload structures and interfaces must be defined with exact abstract types, preconditions, and postconditions.
 * **Minimalist Guardrails**:
   - Design direct interfaces mapping actions to effects, avoiding indirect orchestration, implicit propagation, or speculative abstractions.
   - Trust the caller to coordinate interactions by prioritizing direct control over state and effects.
 * **Codebase Pattern Alignment**:
-  - Align boundary schemas and interaction models with established codebase conventions, reusing existing patterns unless they are insufficient.
+  - Align boundary surface-areas and interaction models with established codebase conventions, reusing existing patterns unless they are insufficient.
 
 ---
 
@@ -57,9 +58,10 @@ Delineate the modified, added, or deleted entry and exit points at the system bo
 
 ## 2. Interface Contracts
 
-Define the detailed input/output constraints and schemas for each modified or introduced boundary interface.
+Define the detailed input/output constraints and boundary surface-areas for each modified or introduced boundary interface.
 
 ### [Interface Name]
 *   **Inputs & Preconditions**: [Specify the input structures, constraints, preconditions, and references to convention-aligning codebase patterns.]
 *   **Outputs & Postconditions**: [Specify nominal and exceptional output structures, side-effects, and diagnostic metadata, omitting internal implementation details.]
+*   **Transition & Structural Mapping**: [For modified interfaces, provide a clear mapping showing how the legacy interface contract translates into the modified boundary surface-area.]
 ```

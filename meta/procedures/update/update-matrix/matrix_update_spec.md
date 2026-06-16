@@ -22,7 +22,8 @@ All use-case scenarios must be compiled into a single JSON array. Each object in
     ],
     "invariantBounds": [
       "<safety_constraint_or_bound_preserved>"
-    ]
+    ],
+    "existingTestStep": "<6_glyph_unique_test_step_identifier>"
   }
 ]
 ```
@@ -41,6 +42,7 @@ Each object in the JSON array must contain the following fields:
 | `inputTrigger` | String | Yes | Free-form string | The specific boundary event or input payload that triggers the scenario. |
 | `expectedPostconditions` | Array of Strings | Yes | Array of free-form strings | List of resulting system states, observable outputs, and side-effects. |
 | `invariantBounds` | Array of Strings | Yes | Array of free-form strings | List of safety boundaries or system rules that must remain preserved. |
+| `existingTestStep` | String | No | `^[a-z0-9]{6}$` | Maps a modified use case to a preexisting E2E test step by its immutable 6-glyph unique identifier. Mandatory for modified boundary interfaces; prohibited for non-modified/new scenarios. |
 
 ---
 
