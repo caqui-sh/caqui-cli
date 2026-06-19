@@ -51,6 +51,7 @@ Each object in the JSON array must contain the following fields:
 * **Identifier Uniqueness & Ordering**:
   - Every scenario object in the array must have a unique `id` value.
   - Scenario IDs must begin at `SC-01` and increment sequentially without gaps.
+  - Pre-existing target identifiers must be unique to enforce a strict 1-to-1 validation mapping.
 * **MECE Completeness & Determinism**:
   - **Determinism**: Scenarios sharing states and triggers must have disjoint predicates.
   - **Coverage**: Scenarios must cover the entire behavioral spectrum of the modified surface area.
@@ -67,8 +68,9 @@ Each object in the JSON array must contain the following fields:
 * **Strict Black-Box Boundaries**:
   - All field values must focus exclusively on external system behavior and states.
   - References to internal codebase structures or implementation details are prohibited.
-* **Classification Accuracy**:
-  - Scenarios updating preexisting boundary behaviors must define `existingTestStepId` matching their legacy E2E test's 6-character identifier to prevent misclassification as new additions.
+* **Classification Accuracy & Expectation Completeness**:
+  - Scenarios modifying pre-existing behavior must define the target pre-existing identifier to prevent misclassification as new.
+  - **Expectation Completeness**: Scenarios targeting pre-existing test steps must define complete post-update expectations, merging valid pre-existing invariants with new requirements.
 * **Content Completion**:
   - All fields must be complete and fully defined.
   - Symbolic representations of value domains are permitted.

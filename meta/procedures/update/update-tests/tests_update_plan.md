@@ -4,33 +4,32 @@ This document is the **procedural counterpart** to the declarative update test s
 
 ---
 
-## Phase 1: Test Vector & Coverage Mapping
+## Phase 1: Scope & Traceability Mapping
 
-Establish the target execution files and map the scenarios requiring verification.
+Establish the target execution scopes and map the scenarios requiring verification.
 
 * **Step 1.1: Identify Target Test Files**
-  - Identify the physical test execution files targeted by the update (ending in `.e2e.ts`).
-  - Target a fitting preexisting test file by default to preserve workspace cohesion, permitting new test files when necessary to avoid shoehorning tests into unrelated scopes.
+  - Locate the target test files, defaulting to existing execution files to preserve cohesion and avoid shoehorning.
 * **Step 1.2: Establish Traceability Mapping**
-  - Map each test scenario directly to the scenario IDs (`SC-XX`) defined in the companion Use-Case Matrix (`<feature_name>_matrix.json`).
-  - For any scenario specifying an `existingTestStep`, locate the target preexisting E2E test step by its unique 6-character identifier, ensuring the test specification references and modifies this step directly rather than creating a new one.
-  - Ensure every matrix scenario is accounted for to guarantee complete test coverage.
+  - Map each test validation node directly to its scenario ID in the companion Use-Case Matrix, verifying that every scenario is accounted for to guarantee complete coverage.
+  - For updates to pre-existing behaviors, locate and target the preexisting test step by its unique identifier to modify it in place rather than creating a redundant test path.
+  - Integrate new validations within existing test hierarchies where the logical scope and preconditions align.
+  - Ensure structural container nodes omit the scenario ID and are generated only to organize the validation nodes.
 
 ---
 
-## Phase 2: Test Case & Step Definition
+## Phase 2: Test Node & Step Definition
 
-Populate the test array with declarative, black-box scenarios and recursive execution steps.
+Populate the flat test specification array with declarative, black-box nodes.
 
-* **Step 2.1: Formulate Root-Level Test Cases**
-  - Define top-level test cases in the JSON array with relative `e2e_path` properties, descriptions, and name fields conforming strictly to the **Caqui Tokenized Labeling Standard** defined in `tests_update_spec.md`.
-  - Populate the `kind` field with `"new"` if the test case is brand-new, or `"modification"` if it adapts a preexisting test case.
-  - Populate the `trace_references` array with the target scenario IDs.
+* **Step 2.1: Formulate Node Structures**
+  - For suite nodes: Specify the target execution path and omit parent references.
+  - For group and validation nodes: Specify the parent identifier pointing to their container step.
+  - For validation nodes: Specify the companion Use-Case Matrix scenario ID.
+  - For all nodes: Declare the classification, update type, descriptive purpose, and a tokenized standard name.
 * **Step 2.2: Define Preconditions & Assertions**
-  - Specify the required initial system states or inputs under the `preconditions` array.
-  - Specify the expected observable system outcomes or boundary invariants under the `assertions` array.
-  - Ensure all assertions and preconditions focus exclusively on system boundary behaviors and omit internal codebase or execution details.
-* **Step 2.3: Model Step Hierarchies**
-  - For sequential execution paths, map recursive nested child step arrays to model parent-child execution flows.
-  - For each nested step, specify the `kind` field as `"new"` or `"modification"` as appropriate.
-  - For leaf steps, define granular `preconditions` and `assertions` to ensure complete traceability.
+  - For validation nodes: Map scenario postconditions and invariants to assertions, and preexisting state to preconditions.
+  - For functional group nodes: Define shared preconditions representing the setup environment.
+  - For suites and abstract group nodes: Omit all precondition and assertion fields.
+* **Step 2.3: Enforce Complete Specification**
+  - Specify the complete post-update state for modified nodes (not a partial diff).

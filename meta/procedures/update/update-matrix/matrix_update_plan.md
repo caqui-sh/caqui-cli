@@ -27,6 +27,8 @@ Populate the scenario array sequentially, mapping behaviors from initial entry t
   - Specify the safety rules and limits that must remain preserved under the invariant bounds array.
   - Ensure failure scenarios map directly to exceptional outputs defined in the companion surface contract.
 * **Step 2.3: Map Modified Scenarios to Existing Tests**
-  - For use cases that modify established boundary interfaces, specify the `existingTestStepId` string.
+  - For use cases that modify established boundary behaviors, specify the `existingTestStepId` string.
   - Locate the corresponding preexisting E2E test step by its unique, immutable 6-character alphanumeric identifier.
   - Map this identifier directly to ensure that rather than implementing redundant tests, the target existing test step is explicitly identified to be updated.
+  - **Pre-existing Invariant Derivation**: Extract all active postconditions and assertion bounds directly from the pre-existing code implementation of the target test step.
+  - **Delta Filtering**: Filter pre-existing logic against the new contracts: merge valid pre-existing invariants into `expectedPostconditions` and `invariantBounds`, omitting obsolete or flawed checks.

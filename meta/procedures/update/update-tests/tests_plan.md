@@ -6,23 +6,26 @@ This document is the **procedural plan** for implementing the declarative specif
 
 ## Phase 1: Test Case Code Structure & Hierarchical Step Nesting
 
-Set up the test structure in code, utilizing nested steps to map the hierarchical specification.
+Set up the test structure in code, utilizing flat JSON arrays with parent pointers to map and reconstruct the test execution hierarchy.
 
 * **Step 1.1: Locate Target Test Files & Enforce Single File-Level Suite Block**
-  - Read the `e2e_path` property from the declarative test specification.
-  - Target a fitting preexisting test file by default, permitting new test files only when necessary to avoid shoehorning.
+  - Read the `e2e_path` of the `suite` node from the declarative test specification.
+  - Default to targeting an appropriate preexisting test file, avoiding new files unless necessary to prevent shoehorning.
   - Ensure each test file contains exactly **one** top-level test block acting as the container suite for that file. Never create a new top-level suite container when adding tests to a preexisting file. Instead, locate the file's single preexisting block to house the new tests.
-* **Step 1.2: Implement Hierarchical Nesting**
-  - Map all JSON test scenarios and steps to subtests via native nested step calls.
-  - For parent test steps that group child test steps (using the `steps` array in the JSON specification), implement them recursively:
-    - Pass the step context parameter to the parent step function.
-    - Invoke the child nested steps on that parent context.
-* **Step 1.3: Synchronize Labels and Identifiers**
-  - Ensure the `name` argument of each test step matches the exact string from the `name` field of the corresponding JSON item 1-to-1.
-* **Step 1.4: Handle Test Modifications vs. New Additions**
-  - Read the `kind` property for each test case/step from the declarative test specification.
-  - **For `"modification"`**: Locate the preexisting test case/step in the target file using its unique, legacy 6-character identifier. Modify and update the existing implementation block in place (inputs, preconditions, and assertions) rather than creating a new test block. Keep the 6-character ID token identical, but update the remaining name segments to reflect the new test structure.
-  - **For `"new"`**: Implement a brand-new test block with a newly generated name and a new 6-character identifier.
+* **Step 1.2: Reconstruct and Implement Hierarchical Nesting**
+  - Reconstruct the hierarchical parent-child relationships in memory using the `parentStepId` pointers from the flat JSON specification.
+  - Map this hierarchy to nested Deno subtests:
+    - For `abstractGroup` and `functionalGroup` nodes, pass the step context parameter to the parent step callback.
+    - Invoke child nested steps recursively on that parent context.
+* **Step 1.3: Apply Node Placement and Logical Order**
+  - **Physical Insertion**: Insert new validation or group blocks inside their designated parent blocks, keeping the codebase logically structured.
+  - **Logical Sequencing**: Order child steps logically within their parent block according to execution flow.
+* **Step 1.4: Synchronize Labels and Identifiers**
+  - Ensure the `name` argument of each Deno test/step matches the exact string from the `name` field of the corresponding JSON item 1-to-1.
+* **Step 1.5: Handle Test Modifications vs. New Additions**
+  - Read the `changeKind` property for each node.
+  - **For `"modification"`**: Locate the preexisting test case/step in the target file using its unique, preexisting 6-character identifier. Modify and update the existing implementation block in place (inputs, preconditions, and assertions) rather than creating a new test block. Keep the 6-character ID token identical, but update the remaining name segments to match the final spec name.
+  - **For `"new"`**: Implement a brand-new test block with its newly generated name and 6-character identifier, physically placing it inside its parent block.
 
 ### Hierarchical Deno Test Structure Template:
 ```typescript
@@ -31,12 +34,12 @@ Deno.test({
   name: "{<suite_6_glyph_id>} [<scope_tag>] <suite_component_topology> (<suite_action_state>): <active_third_person_present_tense_description>",
   async fn(t) {
     
-    // Step of steps (Parent test step):
+    // Abstract or Functional Group step (Parent test step):
     await t.step({
       name: "{<parent_6_glyph_id>} [<scope_tag>] <parent_component_topology> (<parent_action_state>): <active_third_person_present_tense_description>",
       async fn(t) {
         
-        // Leaf-level step:
+        // Validation leaf-level step:
         await t.step({
           name: "{<child_6_glyph_id>} [<scope_tag>] <child_component_topology> (<child_action_state>): <active_third_person_present_tense_description>",
           async fn() {

@@ -10,13 +10,12 @@ This document defines the rules for auditing the traceability and coverage align
 ## A. Test Traceability & Coverage Constraints
 
 * **100% Scenario Coverage**:
-  - Every scenario identifier defined in the co-located Use-Case Matrix (`<feature_name>_matrix.json`) must be targeted by at least one test case or step in the Test Spec.
-* **Trace Reference Resolution**:
-  - Every trace reference value declared in `trace_references` arrays must match an existing scenario ID in the Use-Case Matrix.
+  - Every scenario identifier defined in the co-located Use-Case Matrix (`<feature_name>_matrix.json`) must be targeted by the `scenarioId` of exactly one `validation` node in the flat Test Spec.
+* **Scenario ID Resolution**:
+  - The `scenarioId` value declared in each `validation` node must match an existing scenario ID in the Use-Case Matrix.
 * **Assertion Sufficiency**:
   - Test assertions must verify the expected postconditions and preserve the invariant bounds defined for each scenario in the matrix.
 * **Non-Redundant Validation Paths**:
-  - Test cases must be mutually exclusive with respect to their verification targets.
-  - Duplicate validation paths targeting identical state transitions and input combinations are prohibited.
+  - Duplicate validation paths targeting identical state transitions and inputs are prohibited.
 * **Existing Test Case Refinement**:
-  - If a scenario in the companion Use-Case Matrix defines an `existingTestStep`, the test specification must reference and update the preexisting E2E test case or step (matching its 6-character identifier) rather than introducing a new, redundant test path.
+  - Matrix scenarios defining `existingTestStepId` must map to validation steps with `changeKind` as `"modification"` that preserve the pre-existing 6-character ID token.

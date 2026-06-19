@@ -20,12 +20,13 @@ To ensure verifiability and traceability, every concrete update test specificati
   - Test specifications must evaluate system behavior strictly from a black-box perspective at public-facing boundaries.
   - References to internal codebase structures or implementation details are prohibited.
 * **Behavioral Traceability**:
-  - Test spec entries must identify the scenarios they validate.
-  - If a scenario in the companion Use-Case Matrix defines an `existingTestStep`, the test specification must target that preexisting test case/step (matching its unique 6-character alphanumeric identifier) and outline the updates to its preconditions and assertions rather than introducing a new, redundant test path.
-* **Test File Cohesion**:
-  - Test cases should target a fitting preexisting test file by default, permitting new test files only when necessary to avoid shoehorning.
+  - Test entries must declare the scenarios they validate.
+  - Updates to pre-existing behavior must modify corresponding steps directly, preventing redundant paths.
+* **Test File Cohesion & Context Reuse**:
+  - Target existing execution files by default, creating new ones only when contextually necessary.
+  - Nest steps within existing hierarchies when scope and preconditions align, avoiding duplicate setups.
 * **Coverage Mapping**:
-  - The test specification must target every scenario defined in the companion Use-Case Matrix.
+  - Validation nodes and companion matrix scenarios must form a strict 1-to-1 mapping; structural nodes are excluded.
 * **Hierarchical Step Grouping**:
   - Group test execution paths using recursive nested step arrays to model sequential parent-child execution flows.
 * **Declarative Assertions**:
@@ -35,40 +36,41 @@ To ensure verifiability and traceability, every concrete update test specificati
 
 ## 2. Concrete Update Test JSON Schema
 
-All test scenarios must be compiled into a single JSON array. Each object in the array (and nested recursively within `steps`) must conform to the following schema:
+All test scenarios must be compiled into a single flat JSON array of objects. Each object in the array represents a test step node and must belong to one of four explicit node kinds.
 
 ### 2.1 Output Payload Blueprint
 
 ```json
 [
   {
-    "name": "<tokenized_test_case_name>",
-    "e2e_path": "<relative_path_to_test_file>.e2e.ts",
-    "description": "<scenario_purpose_description>",
-    "kind": "new | modification",
-    "trace_references": [
-      "<matrix_scenario_identifier>"
-    ],
+    "name": "<tokenized_test_suite_name_starting_with_6_glyph_identifier>",
+    "nodeKind": "suite",
+    "changeKind": "new | modification",
+    "description": "<complete_suite_purpose_description>",
+    "e2e_path": "<relative_path_to_test_file>.e2e.ts"
+  },
+  {
+    "name": "<tokenized_group_name_starting_with_6_glyph_identifier>",
+    "nodeKind": "abstractGroup | functionalGroup",
+    "changeKind": "new | modification",
+    "description": "<complete_group_purpose_description>",
+    "parentStepId": "<parent_6_glyph_identifier>",
     "preconditions": [
-      "<required_state_assertion>"
+      "<required_shared_setup_precondition>"
+    ]
+  },
+  {
+    "name": "<tokenized_validation_name_starting_with_6_glyph_identifier>",
+    "nodeKind": "validation",
+    "changeKind": "new | modification",
+    "description": "<complete_validation_purpose_description>",
+    "parentStepId": "<parent_6_glyph_identifier>",
+    "scenarioId": "<matrix_scenario_identifier>",
+    "preconditions": [
+      "<required_step_precondition>"
     ],
     "assertions": [
       "<validated_behavior_invariant>"
-    ],
-    "steps": [
-      {
-        "name": "<tokenized_substep_name>",
-        "kind": "new | modification",
-        "trace_references": [
-          "<matrix_scenario_identifier>"
-        ],
-        "preconditions": [
-          "<required_substep_state>"
-        ],
-        "assertions": [
-          "<validated_substep_invariant>"
-        ]
-      }
     ]
   }
 ]
@@ -76,35 +78,42 @@ All test scenarios must be compiled into a single JSON array. Each object in the
 
 ### 2.2 Field Specifications & Structural Constraints
 
-Each object in the JSON array must contain the following fields:
+Each object in the flat JSON array must conform to the field rules of its designated `nodeKind`:
 
-| Field Name | Type | Required | Description |
-| :--- | :--- | :---: | :--- |
-| `name` | String | Yes | The tokenized test or step name following the labeling standard. |
-| `kind` | String | Yes | Specifies whether the test or step is newly added (`new`) or a modification of a preexisting test (`modification`). |
-| `e2e_path` | String | Yes (for root) | The relative path to the physical test execution file (must end in `.e2e.ts`). Required for top-level objects. |
-| `description` | String | No | Description of the test scenario's purpose. |
-| `trace_references` | Array of Strings | Yes | Mapped scenario identifiers from the Use-Case Matrix. |
-| `preconditions` | Array of Strings | Yes (for leaf) | Declarative statements defining the required initial states or preconditions. |
-| `assertions` | Array of Strings | Yes (for leaf) | Declarative statements defining the validated invariants or outcomes. |
-| `steps` | Array of Objects | No | Array of nested child test step objects conforming recursively to this schema. |
+| Field Name | Type | Required | Allowed In | Description |
+| :--- | :--- | :---: | :--- | :--- |
+| `name` | String | Yes | All | The tokenized test or step name conforming to the labeling standard. Must start with `{6-glyph-id}`. |
+| `nodeKind` | String | Yes | All | Specifies the node kind: `"suite"`, `"abstractGroup"`, `"functionalGroup"`, or `"validation"`. |
+| `changeKind` | String | Yes | All | Specifies if the test or step is newly added (`"new"`) or modifying preexisting tests (`"modification"`). |
+| `description` | String | Yes | All | A complete description explaining the purpose of the test suite, group, or validation step. |
+| `e2e_path` | String | Yes (for suite) | `suite` only | The relative path to the physical test execution file (must end in `.e2e.ts`). |
+| `parentStepId` | String | Yes (for non-suite) | All except `suite` | The unique 6-character identifier token of the parent step. |
+| `scenarioId` | String | Yes | `validation` only | The mapped scenario identifier (`SC-XX`) from the Use-Case Matrix. |
+| `preconditions` | Array of Strings | Yes | `functionalGroup`, `validation` | Declarative statements defining the required initial states or preconditions. For `functionalGroup`, must be non-empty. |
+| `assertions` | Array of Strings | Yes | `validation` only | Declarative statements defining the validated behavioral invariants or outcomes. Must be non-empty. |
+
+Prohibited fields for any `nodeKind` must be omitted from the JSON object (cannot be passed as null or empty values).
 
 ## 3. Payload Integrity Invariants
 
 * **Identifier & Labeling Compliance**:
-  - All test and step names must strictly conform to the repository labeling standard.
-* **Existing Test Modification**:
-  - When `kind` is `"modification"`, the test/step `name` must preserve its legacy 6-character identifier token, while all other segments are malleable and may be updated to reflect the modified test structure.
-  - The `e2e_path` must match the file path of the preexisting E2E test execution file.
-  - The `preconditions` and `assertions` must be updated in place to assert the modified behavioral outcomes, replacing legacy assertions.
-* **Content Completion**:
-  - All fields must be complete and fully defined.
-  - Symbolic representations of value domains are permitted.
-* **Trace Reference Resolution & Co-location**:
-  - Every trace reference must resolve to a valid scenario ID mapped in the co-located companion Use-Case Matrix (`<feature_name>_matrix.json`).
+  - All test and step names must strictly conform to the Caqui Tokenized Labeling Standard.
+* **Specification & Modification Model**:
+  - **File-Level Delta**: The specification document is a delta containing only newly introduced or modified nodes; unaltered pre-existing test steps must be omitted.
+  - **Node-Level Completeness**: Every node represents its complete post-update state rather than a partial diff. For modified nodes:
+    - The assertions and preconditions must be a complete 1-to-1 transform of the companion Use-Case Matrix scenario's expected postconditions, invariant bounds, and preexisting states.
+    - The description must capture the final post-update purpose.
+    - The pre-existing unique identifier must be preserved.
+* **Parent Step Resolution & Ghost Prevention**:
+  - Every parent reference must resolve to either a locally defined node or an active pre-existing step in the target codebase file.
+  - Circular reference chains are prohibited.
+* **Validation Node Placement & Anti-Shoehorning**:
+  - Validation nodes must be nested under parents that align with their logical scope and precondition environment; mismatching nesting is prohibited.
+  - Preexisting parents may be reused only if their setup aligns with the required validation context.
+* **Scenario ID Resolution & Co-location**:
+  - The `scenarioId` field must map to a valid scenario ID defined in the co-located companion Use-Case Matrix (`<feature_name>_matrix.json`).
 * **Strict Black-Box Boundaries**:
-  - All preconditions and assertions must focus exclusively on external system behavior and states.
-  - References to internal codebase structures or implementation details are prohibited.
+  - All preconditions and assertions must focus exclusively on external system behavior and states. References to internal codebase structures or implementation details are prohibited.
 
 ---
 
