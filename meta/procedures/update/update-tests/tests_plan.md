@@ -67,6 +67,15 @@ Prepare the system state and configuration templates prior to running the valida
   - Initialize required assets or state configurations exclusively through public boundary entry points.
   - Prioritize leveraging and reusing established schema definitions to maintain configuration consistency.
   - Use and extend the established master schema file (`master_test_schema.cq`) unless the test instance dictates using a separate or new schema configuration.
+  - When defining or extending test schemas, strictly avoid domain-specific or role-playing terminology. Name all model entities and fields using a sequential, base-26 metered mechanical scheme following this pattern:
+    ```cq
+    model Model_<Model_Meter_Uppercase> {
+      field_<Model_Meter_Uppercase>_<Field_Meter_Lowercase>: <Type>
+    }
+    ```
+    - The `<Model_Meter_Uppercase>` is a sequentially assigned uppercase letter sequence, starting with a single character and advancing sequentially through the alphabet, appending and incrementing additional characters when the current character space is exhausted.
+    - The `<Field_Meter_Lowercase>` is a sequentially assigned lowercase letter sequence following the exact same alphabetic odometer progression.
+    - All schema definitions must strictly follow these structural naming constraints to maintain a dry, domain-neutral testing environment.
 * **Step 2.2: Leverage Closures for Shared Context**
   - Initialize shared context at the parent level.
   - Access parent context within nested child scopes to avoid redundant setup overhead.
