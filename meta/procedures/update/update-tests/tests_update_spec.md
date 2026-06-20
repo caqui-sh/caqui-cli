@@ -21,7 +21,7 @@ To ensure verifiability and traceability, every concrete update test specificati
   - References to internal codebase structures or implementation details are prohibited.
 * **Behavioral Traceability**:
   - Test entries must declare the scenarios they validate.
-  - Updates to pre-existing behavior must modify corresponding steps directly, preventing redundant paths.
+  - Updates to preexisting behavior must target the corresponding pre-existing test step to modify it directly, preventing redundant test paths.
 * **Test File Cohesion & Context Reuse**:
   - Target existing execution files by default, creating new ones only when contextually necessary.
   - Nest steps within existing hierarchies when scope and preconditions align, avoiding duplicate setups.
