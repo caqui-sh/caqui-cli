@@ -13,3 +13,5 @@ This document defines the rules for auditing the validity, relevance, and codeba
   - Logged issues and resolutions must map directly to active or historical codebase implementations.
 * **Positive Realism**:
   - Logged issues must specify concrete architectural details and operational impacts.
+* **Contextual Complementarity**:
+  - Review narratives must focus on design trade-off rationales and systemic risks, avoiding direct duplication of code-level database descriptions.

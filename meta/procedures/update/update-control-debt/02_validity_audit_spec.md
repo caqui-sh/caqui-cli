@@ -14,4 +14,4 @@ This document defines the rules for auditing the validity and codebase alignment
 * **Exclusion of Micro-Management**:
   - Items that do not compromise macro-architectural quality—such as local implementation or stylistic details—must not be logged as technical debt.
 * **Falsifiable Description**:
-  - Each entry must define a concrete, logical description specifying the location or path of the issue, explaining the precise nature of the architectural violation, and detailing its structural or operational impact on the codebase.
+  - Each entry must define a self-contained, concrete, and logical description specifying the location or path of the issue, explaining the precise nature of the architectural violation, and detailing its structural or operational impact on the codebase without referencing external review documents.

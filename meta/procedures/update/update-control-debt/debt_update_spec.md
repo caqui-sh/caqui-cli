@@ -22,9 +22,9 @@ The file must contain a single flat JSON array of objects representing debt item
 | `description` | String | Yes | All | Free-form string | Detailed explanation of the debt, its context, and its macro-architectural implications. |
 | `severity` | String | Yes | All | `critical` \| `major` \| `minor` | Assessment of the debt's severity. |
 | `status` | String | Yes | All | `active` \| `deferred` \| `partially_resolved` \| `resolved` | Current resolution status of the debt item. |
-| `logged_at_index` | String | Yes | All | `^\d{2}$` | The index of the control review document where this debt was first logged (e.g. `"00"`). |
+| `logged_at_index` | String | Yes | All | `^\d{2}$` | The index of the control iteration when this debt was first logged (e.g. `"00"`). |
 | `compromised_criteria` | String | Yes | All | Free-form string | Nuanced description of which architectural criteria from Section 2 are compromised, and to what degree or spectrum of violation. |
-| `resolved_at_index` | String | Yes (Resolved Debt), Prohibited (Unresolved Debt) | Resolved Debt | `^\d{2}$` | The index of the control review document where this debt was resolved or partially resolved. Must be omitted for Unresolved Debt. |
+| `resolved_at_index` | String | Yes (Resolved Debt), Prohibited (Unresolved Debt) | Resolved Debt | `^\d{2}$` | The index of the control iteration when this debt was resolved or partially resolved. Must be omitted for Unresolved Debt. |
 | `resolution_details` | String | Yes (Resolved Debt), Prohibited (Unresolved Debt) | Resolved Debt | Free-form string | Technical explanation of how the debt was resolved or partially resolved. Must be omitted for Unresolved Debt. |
 
 

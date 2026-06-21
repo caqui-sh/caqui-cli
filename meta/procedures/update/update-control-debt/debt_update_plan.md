@@ -1,6 +1,6 @@
 # Procedural Plan for Managing Technical Debt (debt_update_plan.md)
 
-This document is the **procedural counterpart** to the declarative technical debt database specification (`debt_update_spec.md`). It defines the chronological sequence of steps required to evaluate the codebase and manage the centralized technical debt database file (`meta/history/<branch_name>_<version>/<feature_name>_debt.json`) across control review iterations.
+This document is the **procedural counterpart** to the declarative technical debt database specification (`debt_update_spec.md`). It defines the chronological sequence of steps required to evaluate the codebase and manage the centralized technical debt database file (`meta/history/<branch_name>_<version>/<feature_name>_debt.json`) across control iterations.
 
 ---
 
@@ -39,7 +39,7 @@ Append newly identified technical debt items to the unified database file.
 Update the state of preexisting technical debt items when they are resolved, partially resolved, or deferred.
 
 * **Step 3.1: Re-evaluate Preexisting Debt**
-  - For subsequent review iterations (> `00`), re-evaluate the status of all active or deferred debt items in the database.
+  - For subsequent control iterations (> `00`), re-evaluate the status of all active or deferred debt items in the database.
 * **Step 3.2: Log Resolutions & Mitigations**
   - For any resolved or partially resolved items:
     - Transition `status` to `"resolved"` or `"partially_resolved"`.
