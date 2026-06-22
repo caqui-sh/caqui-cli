@@ -42,8 +42,8 @@ All compiled audit issues must be collected into a single JSON array, conforming
 
 To execute an audit, constraints are evaluated across two types of dimensions, which dictate how issues are captured and reported in the payload:
 
-* **Terminal & Atomic Dimensions**: These represent non-divisible, independent properties (e.g., Token Brevity, Token Precision, Reader Accessibility). Each infraction against a terminal dimension constraint generates a separate, distinct audit issue object in the array.
-* **Composite & Entangled Dimensions**: These represent layered properties composed of multiple underlying terminal dimensions that share a mutual trade-off or dependency (e.g., Information Fidelity, which entangles Token Precision and Token Brevity).
+* **Terminal & Atomic Dimensions**: These represent non-divisible, independent properties (e.g., Expression Brevity, Expression Precision, Reader Accessibility). Each infraction against a terminal dimension constraint generates a separate, distinct audit issue object in the array.
+* **Composite & Entangled Dimensions**: These represent layered properties composed of multiple underlying terminal dimensions that share a mutual trade-off or dependency (e.g., Information Fidelity, which entangles Expression Precision and Expression Brevity).
   - **Singular Entangled Issue**: When an infraction occurs across entangled constraints, it is evaluated holistically from the entangled perspective. Rather than logging a collection of separate terminal atomic issues (e.g., one for wordiness and one for missing detail), the auditor compiles and reports a **singular entangled issue** representing the overall trade-off failure or imbalance.
 
 

@@ -1,6 +1,6 @@
-# Audit Dimension Specification *(Atomic & Terminal / Non-Divisible)*: Semantic Veracity - Substance (semantic_veracity.dimension.md)
+# Audit Dimension Specification *(Atomic & Terminal)*: Semantic Veracity - Substance (semantic_veracity.dimension.md)
 
-This specification defines the rules for the **Semantic Veracity** dimension. It audits the factual accuracy of factual claims and quantitative values of the target asset, ensuring they align directly when cross-referenced against an objective source of truth, answering: *Are the ground-level factual claims and quantitative values of the target asset correct when cross-referenced with an objective source of truth?*
+This specification defines the rules for the **Semantic Veracity** dimension. It audits the factual accuracy of factual claims and quantitative values of the target asset, ensuring they align directly when cross-referenced against an objective source of truth, answering: *Are the ground-level factual claims and quantitative values of the target asset correct when cross-referenced with an objective source of truth (minimizing factual errors / maximizing ground-truth alignment)?*
 
 This dimension exists under the [**Semantic Content (Substance)**](audit-pillar/substance.pillar.md) pillar.
 

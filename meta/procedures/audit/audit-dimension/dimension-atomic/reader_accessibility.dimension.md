@@ -1,6 +1,6 @@
-# Audit Dimension Specification *(Atomic & Terminal / Non-Divisible)*: Reader Accessibility - Projection (reader_accessibility.dimension.md)
+# Audit Dimension Specification *(Atomic & Terminal)*: Reader Accessibility - Projection (reader_accessibility.dimension.md)
 
-This specification defines the rules for the **Reader Accessibility** dimension. It audits the readability and fit of the target asset, answering: *Is the target asset structured and phrased to minimize ingestion friction for the specific target reader (human or machine)?*
+This specification defines the rules for the **Reader Accessibility** dimension. It audits the readability and fit of the target asset, answering: *Is the target asset structured and phrased to minimize ingestion friction for the specific target reader (human or machine) (minimizing ingestion friction / maximizing audience fit)?*
 
 This dimension exists under the [**Resolution & Projection**](audit-pillar/projection.pillar.md) pillar.
 

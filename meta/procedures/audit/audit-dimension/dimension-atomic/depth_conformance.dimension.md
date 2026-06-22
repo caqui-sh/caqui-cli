@@ -1,6 +1,6 @@
-# Audit Dimension Specification *(Atomic & Terminal / Non-Divisible)*: Depth Conformance - Projection (depth_conformance.dimension.md)
+# Audit Dimension Specification *(Atomic & Terminal)*: Depth Conformance - Projection (depth_conformance.dimension.md)
 
-This specification defines the rules for the **Depth Conformance** dimension. It audits localized detail density at the terminal leaf level (sentences, tokens, parameters) by inheriting constraints from the active macro depth layer, answering: *Do the terminal sentences or details violate the scale constraint inherited from the lowest macro depth layer?*
+This specification defines the rules for the **Depth Conformance** dimension. It audits localized detail density at the terminal leaf level to ensure alignment with the active perspective layer, answering: *Do the terminal details deviate from the perspective resolution of the active perspective layer (minimizing perspective drift / maximizing resolution alignment)?*
 
 This dimension exists under the [**Resolution & Projection**](audit-pillar/projection.pillar.md) pillar.
 
@@ -11,6 +11,6 @@ This dimension is [**Subjective & Spectrum-based**](audit-nature/subjective_spec
 ## Dimension Constraints
 
 * **Depth Conformance (Terminal Detail Validation)**:
-  - **Constraint**: Local sentences, fields, and values must strictly adhere to the zoom constraint inherited from the lowest active layer of the macro depth cascade.
-  - **Audit Focus**: Identifies and flags local scale violations, such as leaking low-level details (code, memory addresses) in a high-level conceptual section, or hand-waving conceptual summaries where concrete low-level parameters are expected.
-  - **Mutual Exclusive Distinction**: Operates exclusively as a terminal leaf check. It does not define the nested zoom scales (Macro Depth) or audit factual truth (Semantic Veracity).
+  - **Constraint**: All local leaf-level information units must align with the perspective resolution of the active perspective layer.
+  - **Audit Focus**: Identifies and flags local perspective drift, such as introducing premature granularities in a high-level conceptual section, or omitting necessary technical specificity where low-level detail is required.
+  - **Mutual Exclusive Distinction**: Operates exclusively as a terminal leaf check. It does not define the global vertical hierarchy of perspective depth levels (Perspective Depth) or audit factual truth (Semantic Veracity).

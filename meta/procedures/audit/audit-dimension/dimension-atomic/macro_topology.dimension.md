@@ -1,6 +1,6 @@
-# Audit Dimension Specification *(Atomic & Terminal / Non-Divisible)*: Macro Topology - Structure (macro_topology.dimension.md)
+# Audit Dimension Specification *(Atomic & Terminal)*: Macro Topology - Structure (macro_topology.dimension.md)
 
-This specification defines the rules for the **Macro Topology** dimension. It audits the relational structure, logical flow, and network graph of the information space within the target asset, evaluating directional dependencies, transitions, and encapsulation of information units, answering: *Are the internal relationships, logical paths, and dependencies (whether explicitly declared or semantically implied) structurally valid, complete, and free of circular loops or broken linkages?*
+This specification defines the rules for the **Macro Topology** dimension. It audits the relational structure, logical flow, and network graph of the information space within the target asset, evaluating directional dependencies, transitions, and encapsulation of information units, answering: *Are the internal relationships, logical paths, and dependencies (whether explicitly declared or semantically implied) structurally valid, complete, and free of circular loops or broken linkages (minimizing circularity / maximizing relational integrity)?*
 
 This dimension exists under the [**Structural Architecture (Blueprint)**](audit-pillar/structure.pillar.md) pillar.
 

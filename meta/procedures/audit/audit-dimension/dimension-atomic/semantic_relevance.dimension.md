@@ -1,6 +1,6 @@
-# Audit Dimension Specification *(Atomic & Terminal / Non-Divisible)*: Semantic Relevance - Substance (semantic_relevance.dimension.md)
+# Audit Dimension Specification *(Atomic & Terminal)*: Semantic Relevance - Substance (semantic_relevance.dimension.md)
 
-This specification defines the rules for the **Semantic Relevance** dimension. It audits the utility and necessity of information within the target asset, ensuring all included content is strictly necessary and useful for achieving the immediate objective function, answering: *Is the included information strictly necessary and useful for achieving the immediate objective function?*
+This specification defines the rules for the **Semantic Relevance** dimension. It audits the utility and necessity of information within the target asset, ensuring all included content is strictly necessary and useful for achieving the immediate objective function, answering: *Is the included information strictly necessary and useful for achieving the immediate objective function (minimizing off-target noise / maximizing objective utility)?*
 
 This dimension exists under the [**Semantic Content (Substance)**](audit-pillar/substance.pillar.md) pillar.
 

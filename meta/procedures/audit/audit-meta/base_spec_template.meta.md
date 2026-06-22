@@ -44,11 +44,11 @@
 * **A.2 Logical Meaning & Rules (Substance)**:
   - [Specify factual/logical constraints; e.g. "every entry must represent a real architectural trade-off", "descriptions must be falsifiable"]
 * **A.3 Resolution & Projection**:
-  - [Specify the abstraction layer (zoom) and readability/density rules; e.g. "must be written at a design abstraction layer (avoiding micro-management detail)", "must balance technical detail with brevity"]
+  - [Specify the abstraction level and readability/density rules; e.g., "must be written at a design abstraction layer", "must balance technical detail with brevity"]
 * **A.4 Section Boundaries (Scope)**:
   - [Define any component-specific scope boundaries; e.g. "only items active in this iteration are in-scope"]
 * **A.5 Audit Dimensions & Intent**:
-  - **Active Dimensions**: [e.g., Notation Conformance, Data Validity, Macro Depth, Scope]
+  - **Active Dimensions**: [e.g., Notation Conformance, Data Validity, Perspective Depth, Scope]
   - **Interpretive Fallbacks (if any)**:
     - *Dimension*: [e.g., Information Encoding]
     - *Evaluative Intent*: [Declare the intent the auditor must verify for this component]
