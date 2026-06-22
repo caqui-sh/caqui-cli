@@ -5,6 +5,5 @@ This dimension is objective but spectrum-based, evaluated against clear external
 * **Evaluation Profile**: Objective / Spectrum
 
 * **Associated Dimensions**:
-  * [Scope](../audit-dimension/scope_breadth_audit_dimension.md)
-  * [Inclusion Accuracy (Recall)](../audit-dimension/inclusion_breadth_audit_dimension.md)
-  * [Veracity](../audit-dimension/veracity_substance_audit_dimension.md)
+  * [Inclusion Accuracy](audit-dimension/dimension-atomic/inclusion_accuracy.dimension.md)
+  * [Semantic Veracity](audit-dimension/dimension-atomic/semantic_veracity.dimension.md)

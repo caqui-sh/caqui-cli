@@ -1,10 +1,10 @@
-# Technical Audit Specification: Semantic Fidelity - Substance (semantic_substance_audit_dimension.md)
+# Audit Dimension Specification *(Atomic & Terminal / Non-Divisible)*: Semantic Fidelity - Substance (semantic_fidelity.dimension.md)
 
 This specification defines the rules for the **Semantic Fidelity** dimension. It audits the correctness and accuracy of the conceptual model and representation of the target asset relative to reality, ensuring it preserves true logical relationships, answering: *Does the conceptual representation of the target asset preserve the true logical relationships and intent of what it represents?*
 
-This dimension exists under the [**Semantic Content (Substance)**](../audit-pillar/substance_audit_pillar.md) pillar.
+This dimension exists under the [**Semantic Content (Substance)**](audit-pillar/substance.pillar.md) pillar.
 
-This dimension is [**Subjective & Spectrum-based**](../audit-nature/subjective_spectrum_audit_nature.md) in nature.
+This dimension is [**Subjective & Spectrum-based**](audit-nature/subjective_spectrum.nature.md) in nature.
 
 ---
 

@@ -5,7 +5,7 @@ The **Structural Architecture (Blueprint)** pillar evaluates the layout, rules, 
 * **Key Question**: *Is the structural blueprint correct?*
 
 * **Associated Dimensions**:
-  * [Syntax & Formatting](../audit-dimension/syntax_structure_audit_dimension.md)
-  * [Topology](../audit-dimension/topology_structure_audit_dimension.md)
-  * [Alignment](../audit-dimension/alignment_structure_audit_dimension.md)
-  * [Validity](../audit-dimension/validity_structure_audit_dimension.md)
+  * [Macro Structure](dimension-atomic/macro_structure.dimension.md)
+  * [Macro Topology](dimension-atomic/macro_topology.dimension.md)
+  * [Data Validity](dimension-atomic/data_validity.dimension.md)
+  * [Notation Conformance](dimension-atomic/notation_conformance.dimension.md)
