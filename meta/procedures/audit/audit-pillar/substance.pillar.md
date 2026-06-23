@@ -10,3 +10,5 @@ The **Semantic Content (Substance)** pillar evaluates the meaning, logic, and fa
   * [Semantic Uniqueness](dimension-atomic/semantic_uniqueness.dimension.md)
   * [Semantic Relevance](dimension-atomic/semantic_relevance.dimension.md)
   * [Semantic Consistency](dimension-atomic/semantic_consistency.dimension.md)
+  * [Semantic Diversity](dimension-atomic/semantic_diversity.dimension.md)
+

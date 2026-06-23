@@ -13,4 +13,4 @@ This dimension is [**Subjective & Spectrum-based**](audit-nature/subjective_spec
 * **Semantic Fidelity (Meaning Accuracy)**:
   - **Constraint**: The underlying conceptual representation of the target asset must preserve the true logical relationships and intent of what it represents in reality.
   - **Audit Focus**: Verifies that the conceptual model of the target asset is a faithful interpretation.
-  - **Mutual Exclusive Distinction**: It checks if the conceptual model of the target asset is correct, completely blind to whether individual data elements are perfectly exact at the ground level, and blind to how concisely that model is written.
+  - **Mutual Exclusive Distinction**: Focuses strictly on the correctness and accuracy of the conceptual model relative to reality and intent. It is blind to individual, ground-level factual errors (Semantic Veracity), internal self-contradictions (Semantic Consistency), or the representation richness of those concepts (Semantic Diversity).

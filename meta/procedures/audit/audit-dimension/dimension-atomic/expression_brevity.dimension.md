@@ -1,6 +1,6 @@
 # Audit Dimension Specification *(Atomic & Terminal)*: Expression Brevity - Projection (expression_brevity.dimension.md)
 
-This specification audits target asset conciseness, answering: *Does the target asset minimize its representation volume (the physical footprint or size of the expression) to maximize information density (minimizing representation footprint / maximizing information density)?*
+This specification defines the rules for the **Expression Brevity** dimension. It audits the compactness and physical footprint of the expression relative to its semantic signal, answering: *Does the target asset convey its semantic signal without unnecessary expressive overhead or fluff (minimizing representation volume / maximizing information density)?*
 
 This dimension exists under the [**Resolution & Projection**](audit-pillar/projection.pillar.md) pillar.
 

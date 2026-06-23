@@ -10,23 +10,23 @@ The audit cycle is structured as a 5-stage state machine:
 
 1. **Stage 1: Content Scope & Identity (Graph Boundaries)**
    - **Inputs**: Inclusion, Exclusion, Semantic Uniqueness
-   - **Pass Criteria**: All required information is successfully identified and included (no omissions), out-of-scope information is excluded, and the node set is free of redundant or overlapping information units.
+   - **Pass Criteria**: All required information is successfully identified and included (no omissions, false negatives, or coverage deficits), out-of-scope information is excluded (no false positives or information pollution), and the node set is free of redundant or overlapping information units.
    - **Remediation**: Adjust boundary inputs or merge/delete duplicate information units. Loop back to Stage 1.
    
-2. **Stage 2: Macro Graph Architecture (Skeletal & Scale Setup)**
+2. **Stage 2: Macro Graph Architecture (Skeletal & Perspective Setup)**
    - **Inputs (Entangled)**: Macro Structure, Perspective Depth, Macro Topology, Depth Continuity
    - **Pass Criteria**: Folder tree, file naming, section outline hierarchies, nested depth layers, reference linkages, and transitional flow steps resolve cleanly as a coherent, continuous, non-cyclic macro graph.
    - **Remediation**: Reconnect reference paths, adjust parent-child hierarchy, rewrite heading templates, or insert transitional nodes. Loops back to Stage 2 (or Stage 1 if changes alter the scope boundary).
    
 3. **Stage 3: Substance, Truth & Semantic Consistency (Substance Auditing)**
-   - **Inputs**: Semantic Relevance, Semantic Veracity, Semantic Consistency
-   - **Pass Criteria**: All information units in the constructed graph are useful/necessary, factually true, and logically consistent with one another (no clashing perspectives, contradictory statements, or fragmented terminology).
-   - **Remediation**: Delete superfluous nodes, correct facts, or resolve contradictions/inconsistent terminology. If edits alter outlines, links, or scales, loop back to Stage 2; otherwise, loop back to Stage 3.
+   - **Inputs**: Semantic Relevance, Semantic Veracity, Semantic Consistency, Semantic Diversity
+   - **Pass Criteria**: All information units in the constructed graph are useful/necessary, factually true, logically consistent with one another (no clashing perspectives, contradictory statements, or fragmented terminology), and describe complex/central concepts from multiple, diverse angles to ensure complete understanding (maximizing representation diversity).
+   - **Remediation**: Delete superfluous nodes, correct facts, resolve contradictions/inconsistent terminology, or enrich conceptual framing. If edits alter outlines, links, or perspective depths, loop back to Stage 2; otherwise, loop back to Stage 3.
    
-4. **Stage 4: Abstraction, Local Scale & Data Validity (Drafting & Formatting)**
+4. **Stage 4: Abstraction, Local Resolution & Data Validity (Drafting & Formatting)**
    - **Inputs (Entangled)**: Semantic Fidelity, Depth Conformance, Information Encoding (Information Fidelity, Expression Precision, Expression Brevity, Reader Accessibility), Data Validity
    - **Pass Criteria**: Local text representations, terminal detail densities, packaging density, and context-sensitive range limits conform to specifications and are calibrated to the lowest perspective depth constraint.
-   - **Remediation**: Adjust details, range limits, or formatting. If changes alter ground-level facts, relevance, or alignment, loop back to Stage 3; otherwise, loop back to Stage 4.
+   - **Remediation**: Adjust details, range limits, or formatting. If changes alter ground-level facts, relevance, or diversity, loop back to Stage 3; otherwise, loop back to Stage 4.
    
 5. **Stage 5: Micro Polish (Copy-Editing)**
    - **Inputs**: Notation Conformance
@@ -43,7 +43,7 @@ Each stage of the cycle represents a dedicated run of the [**Audit Plan**](/meta
 * **Step 1.1: Inclusion & Exclusion** (Concurrent or Sequential)
   - *Universal Actions*:
     - **Inclusion**: Verify that all required information belonging inside the defined scope is successfully identified and captured.
-    - **Exclusion**: Verify that out-of-scope information is blocked and prevented from polluting the target asset.
+    - **Exclusion**: Verify that out-of-scope information is successfully identified and excluded.
   - *Execution Rationale*: Inclusion and Exclusion can be evaluated concurrently or in any sequential order, as they establish distinct, independent aspects of boundary cleanliness (recall and exclusion, respectively).
   - *Remediation*: If boundaries are incorrect, adjust boundary inputs/mappings. **Loops back to Step 1.1**.
 * **Step 1.2: Semantic Uniqueness** (Independent)
@@ -51,13 +51,13 @@ Each stage of the cycle represents a dedicated run of the [**Audit Plan**](/meta
     - **Semantic Uniqueness**: Verify that the target asset is free from unnecessary repetition and overlapping information.
   - *Remediation*: If duplicate information units exist, merge or delete them. **Loops back to Step 1.2** (or back to Step 1.1 if resolution alters boundary scope).
 
-### Stage 2: Macro Graph Architecture (Skeletal & Scale Setup)
+### Stage 2: Macro Graph Architecture (Skeletal & Perspective Setup)
 * **Step 2.1: Macro Graph Architecture** (Entangled: Macro Structure, Perspective Depth, Macro Topology, Depth Continuity)
   - *Universal Actions*:
     - **Macro Structure**: Verify that the folder layout, file names, heading hierarchy, and outline skeleton conform to templates. While macro-structure is hierarchical and layered (Folders -> Files -> Sections -> Blocks), micro-formatting operates as the terminal copy-editing check.
     - **Perspective Depth**: Verify that the global vertical hierarchy of perspective depth levels is correctly calibrated to the target objective.
     - **Macro Topology**: Verify that all macro-level linkages, cross-file references, and parent-child dependencies resolve cleanly and form a valid, non-cyclic graph.
-    - **Depth Continuity**: Verify that the macro-level progression across abstraction layers is continuous, preventing reader disorientation by ensuring all vertical transitions establish clear intermediate context.
+    - **Depth Continuity**: Verify that the macro-level progression across abstraction layers is continuous, preventing perspective leaps and transition friction by ensuring all vertical transitions establish clear intermediate context.
   - *Execution Rationale*: Evaluating file relationships (Macro Topology) and transitional steps (Depth Continuity) requires concurrently setting the outline skeleton (Macro Structure) and the global depth constraints (Perspective Depth). Because these dimensions define the global container framework, they are deeply co-dependent and must be evaluated together.
   - *Remediation*: Reconnect reference paths, adjust parent-child hierarchies, rewrite heading outlines, or add transitional files/sections. **Loops back to Step 2.1** (or Stage 1, Step 1.1 if changes modify the scope boundary).
 
@@ -74,16 +74,20 @@ Each stage of the cycle represents a dedicated run of the [**Audit Plan**](/meta
   - *Universal Actions*:
     - **Semantic Consistency**: Verify that different components or layers of detail within the target asset assert consistent realities, do not contradict one another, and use uniform terminology for identical concepts.
   - *Remediation*: Resolve the contradiction or terminological inconsistency by rewriting one of the clashing sections. **Loops back to Step 3.2** (Semantic Veracity) and **Stage 2, Step 2.1** (Depth Continuity/Macro Topology) to verify the substance and structural flow of the rewrite.
+* **Step 3.4: Semantic Diversity** (Independent)
+  - *Universal Actions*:
+    - **Semantic Diversity**: Verify that the target asset describes complex or central concepts from multiple, diverse angles or conceptual frameworks to ensure complete understanding and prevent design fixation (minimizing conceptual rigidity / maximizing representation diversity).
+  - *Remediation*: Enrich the conceptual framing or add multi-angled representations to cover the concept's facets. **Loops back to Step 3.3** (Semantic Consistency) and **Step 3.2** (Semantic Veracity) to ensure the newly added representations do not introduce contradictions or factual deviations.
 
-### Stage 4: Abstraction, Local Scale & Data Validity (Drafting & Formatting)
-* **Step 4.1: Abstraction, Local Scale & Data Validity** (Entangled: Semantic Fidelity, Depth Conformance, Information Encoding, Data Validity)
+### Stage 4: Abstraction, Local Resolution & Data Validity (Drafting & Formatting)
+* **Step 4.1: Abstraction, Local Resolution & Data Validity** (Entangled: Semantic Fidelity, Depth Conformance, Information Encoding, Data Validity)
   - *Universal Actions*:
     - **Semantic Fidelity**: Verify that the underlying conceptual representation and model within the target asset faithfully preserve the true logical relationships and intent of what they represent in reality.
-    - **Depth Conformance**: Verify that all local leaf-level information units align with the perspective resolution of the active perspective layer, preventing perspective drift.
+    - **Depth Conformance**: Verify that all local leaf-level information units align with the perspective resolution of the active perspective layer, preventing perspective mismatches and drift.
     - **Information Encoding**: Verify that the presentation profile balances Information Fidelity (Expression Precision and Expression Brevity) against reader ingestion friction (Reader Accessibility).
     - **Data Validity**: Verify that all individual data elements and values within the target asset conform to designated types, range limits, domain constraints, or logical boundaries. Where constraints are qualitatively or semantically defined, data validity is context-sensitive and exists on a spectrum (evaluating degrees of conceptual alignment or adherence to semantic conventions).
   - *Execution Rationale*: The choice of local terminal depth level (Depth Conformance) and packaging format (Encoding) directly dictates the context-sensitive data validity constraints (Data Validity) of the data, which in turn shapes the conceptual model representation (Semantic Fidelity). Because qualitatively defined assets rely on spectrum-based validity and layered depth inheritance, they represent a co-dependent design trade-off and must be evaluated concurrently.
-  - *Remediation*: Adjust details, model relationships, data boundaries, or formatting. **Loops back to Stage 3, Step 3.3** (Semantic Consistency), **Step 3.2** (Semantic Veracity), and **Stage 2, Step 2.1** (Depth Continuity/Macro Topology) to ensure modified content remains true, consistent, and structurally coherent.
+  - *Remediation*: Adjust details, model relationships, data boundaries, or formatting. **Loops back to Stage 3, Step 3.4** (Semantic Diversity), **Step 3.3** (Semantic Consistency), **Step 3.2** (Semantic Veracity), and **Stage 2, Step 2.1** (Depth Continuity/Macro Topology) to ensure modified content remains true, consistent, and structurally coherent.
 
 ### Stage 5: Micro Polish (Copy-Editing)
 * **Step 5.1: Notation Conformance** (Independent)
@@ -114,6 +118,7 @@ The feedback loops and cycles between the 18 active dimensions are defined as fo
 * **Reader Accessibility**: Rephrasing or restructuring layout for readability triggers re-evaluation of **Notation Conformance**.
 * **Depth Continuity**: Adding transitional text triggers re-evaluation of **Semantic Veracity** and **Notation Conformance**.
 * **Data Validity**: Changing classification tags triggers re-evaluation of **Macro Topology**.
-* **Macro Topology**: Reconnecting references or paths triggers re-evaluation of **Semantic Consistency** and **Semantic Veracity**.
+* **Macro Topology**: Reconnecting references or paths triggers re-evaluation of **Semantic Diversity**, **Semantic Consistency**, and **Semantic Veracity**.
 * **Semantic Consistency**: Resolving contradictions or fragmented terminology triggers re-evaluation of **Semantic Veracity** and **Semantic Fidelity**.
+* **Semantic Diversity**: Enriching conceptual representation with diverse angles triggers re-evaluation of **Semantic Consistency**.
 * **Notation Conformance**: Formatting corrections require no downstream checks (cosmetic sink).

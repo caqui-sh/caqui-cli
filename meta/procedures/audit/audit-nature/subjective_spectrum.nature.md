@@ -7,6 +7,8 @@ This dimension is subjective and spectrum-based, requiring context-sensitive int
 * **Associated Dimensions**:
   * [Semantic Fidelity](audit-dimension/dimension-atomic/semantic_fidelity.dimension.md)
   * [Semantic Relevance](audit-dimension/dimension-atomic/semantic_relevance.dimension.md)
+  * [Semantic Diversity](audit-dimension/dimension-atomic/semantic_diversity.dimension.md)
+
   * [Perspective Depth](audit-dimension/dimension-atomic/perspective_depth.dimension.md)
   * [Depth Conformance](audit-dimension/dimension-atomic/depth_conformance.dimension.md)
   * [Depth Continuity](audit-dimension/dimension-atomic/depth_continuity.dimension.md)

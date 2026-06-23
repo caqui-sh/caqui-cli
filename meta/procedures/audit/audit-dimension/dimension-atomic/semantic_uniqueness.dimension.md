@@ -13,4 +13,4 @@ This dimension is [**Objective & Discrete (Zero-Tolerance)**](audit-nature/objec
 * **Semantic Uniqueness (Zero Redundancy)**:
   - **Constraint**: The target asset must be free from unnecessary repetition and overlapping information.
   - **Audit Focus**: Flags duplicate or redundant information units within the target asset.
-  - **Mutual Exclusive Distinction**: Measures informational bloat and repetition. It flags instances where valid information is repeated needlessly, regardless of Semantic Veracity or Notation Conformance.
+  - **Mutual Exclusive Distinction**: Measures informational bloat and repetition. It flags instances where valid information is repeated needlessly, regardless of whether that information is relevant (Semantic Relevance) or true (Semantic Veracity).
