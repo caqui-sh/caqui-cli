@@ -93,5 +93,14 @@ To prevent auditor anchoring, design fixation, or hand-waving subjectivity, dime
 
 This coordinate mapping ensures that dimensions are captured in their complete conceptual depth, but authors must not shoehorn either perspective into a dimension where it does not naturally fit.
 
+### 5. Inquisitive & Informative Dual Framing (Semantic Projective Duality)
+Every audit dimension specification must frame its target concept using both a **Statement** and a **Question** to capture the complete semantic space:
+* **The Informative Statement (Banded Constant / Bounded)**:
+  - *Manifestation*: Enforced in the introductory setup sentence and the `Constraint` definition.
+  - *Mechanism*: Acts as an informative projection ($!p$) or extensional focus. It **minimizes** variability, state-space, and update frame, while **maximizing** invariance (acting as a constant), constraint rules, and update focus. This collapses alternatives to define a rigid boundary condition.
+* **The Inquisitive Question (Unbounded Variable / Open)**:
+  - *Manifestation*: Enforced in the `[conceptual_outcome_question]` of the introductory paragraph.
+  - *Mechanism*: Acts as an inquisitive projection ($?p$) or intensional frame (interrogative type-shifting). It **minimizes** certainty, assertions, and real-world assumptions, while **maximizing** alternative paths, possibility state-spaces, and inquiry frames. This shifts the concept from a constant to a variable bounded by a domain, providing the auditor with the target problem context.
+
 
 

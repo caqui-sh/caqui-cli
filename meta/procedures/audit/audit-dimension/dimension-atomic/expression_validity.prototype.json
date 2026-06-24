@@ -1,0 +1,39 @@
+{
+  "dimensionName": "Expression Validity",
+  "dimensionKind": "ATOMIC",
+  "dimensionPillar": "STRUCTURAL_ARCHITECTURE",
+  "dimensionNature": [
+    "OBJECTIVE_DISCRETE",
+    "SUBJECTIVE_SPECTRUM"
+  ],
+  "dimensionSubject": "Information expressions",
+  "dimensionPositiveQuestion": "Are all expressions within the target scope realistic and sane, fitting within their contextual boundaries?",
+  "dimensionNegativeQuestion": "Do any expressions within the target scope deviate from sanity or violate boundaries?",
+  "dimensionSignal": [
+    "Contextual conformance",
+    "Semantic realism",
+    "Constraint satisfaction",
+    "Domain alignment"
+  ],
+  "dimensionNoise": [
+    "Expectation deviations",
+    "Invariant violations",
+    "Plausibility breakdowns",
+    "Distortion accretions",
+    "Logical contortions"
+  ],
+  "dimensionFloor": [
+    "Operational ranges",
+    "Acceptance bands",
+    "Inherent bounds",
+    "Essential limits"
+  ],
+  "dimensionCeiling": [
+    "Expression sanity",
+    "Conceptual viability",
+    "Domain congruence",
+    "Systemic harmony",
+    "Range retention",
+    "Anomaly suppression"
+  ]
+}
