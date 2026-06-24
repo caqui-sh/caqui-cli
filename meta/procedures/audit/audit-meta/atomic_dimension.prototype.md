@@ -31,12 +31,12 @@ Every atomic dimension specification prototype must be written as a valid JSON o
     "[A discrete, checkable baseline constraint representing the entry-level pass/fail boundary]",
     "[Additional floor constraints, balancing outside-in (extrinsic) and inside-out (intrinsic) perspectives. Use distinct nouns/adjectives, e.g., 'Operational ranges', 'Acceptance bands', 'Inherent bounds', 'Essential limits']"
   ],
-  "dimensionCeiling": [
+  "dimensionDynamics": [
     "[Optimization vector representing a Pushing Up constructive force (Self-Offensive), e.g., 'Expression sanity']",
     "[Optimization vector representing a Pulling Up attractive force (External-Offensive), e.g., 'Domain congruence']",
     "[Optimization vector representing an internal Resisting Down defensive force (Self-Defensive), e.g., 'Anomaly suppression']",
     "[Optimization vector representing an external Resisting Down defensive force (External-Defensive), e.g., 'Range retention']",
-    "[Ensure ceiling options stay strictly within the dimension's atomic scope to maintain Mutual Exclusion (ME)]"
+    "[Ensure dynamics options stay strictly within the dimension's atomic scope to maintain Mutual Exclusion (ME)]"
   ]
 }
 ```
@@ -68,10 +68,10 @@ Every atomic dimension specification prototype must be written as a valid JSON o
 * **Perspective Balance**: The floor constraints must balance both **extrinsic** (outside-in, defining the valid space from the outside, e.g., `"Operational ranges"`, `"Acceptance bands"`) and **intrinsic** (inside-out, defining boundaries inherent to the core concept/essence of the expression, e.g., `"Inherent bounds"`, `"Essential limits"`).
 * **No Word Repetition**: None of the nouns or adjectives in the `dimensionFloor` array may be repeated.
 
-### E. Ceiling (The 1D Vector Forces Grid)
-* **The Vector Grid**: The ceiling options must map onto four distinct vector directions:
+### E. Dynamics (The Vector Forces Grid)
+* **The Vector Grid**: The dynamics options must map onto four distinct vector directions:
   1. **Self-Offensive**: Pushing up toward the goal from the inside out (e.g., `"Expression sanity"`).
   2. **External-Offensive**: Pulling up toward the goal from the outside in (e.g., `"Domain congruence"`).
   3. **Self-Defensive**: Resisting internal degradation or anomalies from within (e.g., `"Anomaly suppression"`).
   4. **External-Defensive**: Resisting external drift or breach of contextual boundaries (e.g., `"Range retention"`).
-* **Mutual Exclusion**: Ceiling options must be strictly bounded within the atomic scope of the target dimension, preventing conceptual creep into adjacent dimensions (such as *Reader Accessibility* or *Semantic Fidelity*).
+* **Mutual Exclusion**: Dynamics options must be strictly bounded within the atomic scope of the target dimension, preventing conceptual creep into adjacent dimensions (such as *Reader Accessibility* or *Semantic Fidelity*).
