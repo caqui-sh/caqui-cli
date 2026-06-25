@@ -23,7 +23,7 @@ Every atomic dimension specification prototype must be written as a valid JSON o
   ],
   "dimensionNoise": [
     "[Unique negative aspect representing structural/cognitive friction, clutter, or unwanted variance]",
-    "[Additional negative aspect reframed to introduce semantic diversity without word repetition. Use normalized compound noun format: Noun Adjunct + Plural Noun, e.g., 'Expectation deviations']"
+    "[Additional negative aspect reframed to introduce semantic diversity without word repetition. Use a grammatically normalized format matching the signal list (e.g., matching adjectives like 'Absurd', or compound nouns like 'Invariant violations')]"
   ],
   "dimensionFloor": [
     "[A discrete, checkable baseline constraint representing the entry-level pass/fail boundary]",
@@ -54,10 +54,13 @@ Every atomic dimension specification prototype must be written as a valid JSON o
 * **State Quality & Composition**: Signal and noise represent the relative composition and quality of the expression *within* the viable space. They describe what is present in the static state.
 * **Asymmetric Mapping**: The items in `dimensionSignal` and `dimensionNoise` must represent distinct, non-overlapping concepts and **never** be simple mirror-image negations of each other.
 * **Semantic Diversity (Pleonastic Layering)**: Multiple options must be provided to capture different conceptual viewpoints of signal/noise.
-* **Grammatical Normalization**: All options in `dimensionNoise` must follow the consistent compound noun format: `[Noun Adjunct] [Plural Noun]` (e.g., `"Expectation deviations"`, `"Invariant violations"`).
+* **Grammatical Normalization**: All options in `dimensionNoise` must follow a consistent grammatical format that aligns with the projection style of `dimensionSignal` to ensure logical symmetry:
+  - **Adjective-based style**: If signals are formulated as adjectives, noises must also be adjectives (e.g., `"Absurd"`, `"Fallacious"`, `"Implausible"`).
+  - **Noun-based style**: If signals are formulated as nouns, noises must follow the consistent compound noun format: `[Noun Adjunct] [Plural Noun]` (e.g., `"Expectation deviations"`, `"Invariant violations"`).
 * **Locality Heuristics**: To ensure projection diversity without rigid schema constraints, both arrays should cover:
   - **Self/Intrinsic Aspects**: Focusing on internal soundness, logical viability, or local correctness (e.g., `"Constraint satisfaction"` or `"Logical contortions"`).
   - **External/Extrinsic Aspects**: Focusing on relationships to the environment, context, or external expectations (e.g., `"Contextual conformance"` or `"Expectation deviations"`).
+  - **Purely Intrinsic Focus**: For universal, context-independent, or highly abstract atomic dimensions (like *Expression Validity*), the specification may choose to omit extrinsic relations entirely. Emphasizing a **purely intrinsic nature** (focusing strictly on internal logical structure, feasibility, sanity, and viability) preserves universality and prevents overlap with environment-specific schema/data constraints (which are handled by *Notation Conformance* or *Data Validity*).
 
 ### C. Floor (Inside-Out vs. Outside-In)
 * **Perspective Balance**: The floor constraints must balance both **extrinsic** (outside-in, defining the valid space from the outside, e.g., `"Operational ranges"`, `"Acceptance bands"`) and **intrinsic** (inside-out, defining boundaries inherent to the core concept/essence of the expression, e.g., `"Inherent bounds"`, `"Essential limits"`).

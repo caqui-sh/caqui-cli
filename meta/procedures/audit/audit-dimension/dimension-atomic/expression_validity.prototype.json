@@ -8,21 +8,18 @@
   ],
   "dimensionSubject": "Information expressions",
   "dimensionSignal": [
-    "Logical feasibility",
-    "Constraint integrity",
-    "Semantic sanity",
-    "Instance viability",
-    "Model conformance",
-    "Systemic compatibility",
-    "Statement rationality",
-    "Practical sensibility"
+    "Feasible",
+    "Rational",
+    "Sane",
+    "Sensible",
+    "Viable"
   ],
   "dimensionNoise": [
-    "Expectation deviations",
-    "Invariant violations",
-    "Plausibility breakdowns",
-    "Distortion accretions",
-    "Logical contortions"
+    "Absurd",
+    "Fallacious",
+    "Illogical",
+    "Implausible",
+    "Unresolvable"
   ],
   "dimensionFloor": [
     "Operational ranges",
@@ -32,7 +29,7 @@
   ],
   "dimensionDynamics": [
     "Coherence amplification",
-    "Logic propagation",
+    "Reasoning propagation",
     "External integration",
     "Anomaly suppression",
     "Boundary enforcement",
