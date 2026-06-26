@@ -1,0 +1,20 @@
+{
+  "effectKind": "ATOMIC",
+  "effectId": "domain_inclusion",
+  "effectAxis": "Domain Inclusion",
+  "effectSubject": "Domain articulation",
+  "effectMaximize": [
+    "Captured",
+    "Complete",
+    "Identified",
+    "Included",
+    "Recalled"
+  ],
+  "effectMinimize": [
+    "Omitted",
+    "Ignored",
+    "Overlooked",
+    "Excluded",
+    "Neglected"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "effectKind": "ATOMIC",
+  "effectId": "domain_delineation",
+  "effectAxis": "Domain Delineation",
+  "effectSubject": "Domain boundary",
+  "effectMaximize": [
+    "Delineated",
+    "Bounded",
+    "Defined",
+    "Enclosed"
+  ],
+  "effectMinimize": [
+    "Amorphous",
+    "Vague",
+    "Blurry",
+    "Unbounded"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "effectKind": "ATOMIC",
+  "effectId": "expression_validity",
+  "effectAxis": "Expression Validity",
+  "effectSubject": "Information expressions",
+  "effectMaximize": [
+    "Feasible",
+    "Rational",
+    "Sane",
+    "Sensible",
+    "Viable"
+  ],
+  "effectMinimize": [
+    "Absurd",
+    "Fallacious",
+    "Illogical",
+    "Implausible",
+    "Unresolvable"
+  ]
+}

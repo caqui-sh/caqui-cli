@@ -1,0 +1,22 @@
+{
+  "effectKind": "ATOMIC",
+  "effectId": "domain_exclusion",
+  "effectAxis": "Domain Exclusion",
+  "effectSubject": "Domain articulation",
+  "effectMaximize": [
+    "Focused",
+    "Distinct",
+    "Cohesive",
+    "Pure",
+    "Essential",
+    "Convergent"
+  ],
+  "effectMinimize": [
+    "Polluted",
+    "Conflated",
+    "Extraneous",
+    "Diluted",
+    "Incongruous",
+    "Divergent"
+  ]
+}

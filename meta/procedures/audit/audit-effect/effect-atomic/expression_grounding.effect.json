@@ -1,0 +1,27 @@
+{
+  "effectKind": "ATOMIC",
+  "effectId": "expression_grounding",
+  "effectAxis": "Expression Grounding",
+  "effectSubject": "Information expressions",
+  "effectMaximize": [
+    "Sound",
+    "Derived",
+    "Anchored",
+    "Axiomatic",
+    "Supported",
+    "Nomic",
+    "Systemic",
+    "Justified"
+  ],
+  "effectMinimize": [
+    "Specious",
+    "Conjectural",
+    "Drifting",
+    "Arbitrary",
+    "Unwarranted",
+    "Erratic",
+    "Isolated",
+    "Detached",
+    "Speculative"
+  ]
+}
