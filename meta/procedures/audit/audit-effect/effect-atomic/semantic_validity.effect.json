@@ -1,8 +1,8 @@
 {
   "effectKind": "ATOMIC",
-  "effectId": "expression_validity",
-  "effectAxis": "Expression Validity",
-  "effectSubject": "Information expressions",
+  "effectKey": "semantic_validity",
+  "effectGoal": "Semantic validity",
+  "effectSubject": "Semantic content",
   "effectMaximize": [
     "Feasible",
     "Rational",
@@ -15,6 +15,6 @@
     "Fallacious",
     "Illogical",
     "Implausible",
-    "Unresolvable"
+    "Paradoxical"
   ]
 }

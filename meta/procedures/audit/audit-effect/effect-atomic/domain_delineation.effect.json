@@ -1,7 +1,7 @@
 {
   "effectKind": "ATOMIC",
-  "effectId": "domain_delineation",
-  "effectAxis": "Domain Delineation",
+  "effectKey": "domain_delineation",
+  "effectGoal": "Domain delineation",
   "effectSubject": "Domain boundary",
   "effectMaximize": [
     "Delineated",

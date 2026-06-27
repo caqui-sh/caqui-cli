@@ -1,0 +1,19 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "packaging_precision",
+  "effectGoal": "Packaging precision",
+  "effectSubject": "Information representation",
+  "effectMaximize": [
+    "Exact",
+    "Specific",
+    "Sharp",
+    "Detailed"
+  ],
+  "effectMinimize": [
+    "Approximate",
+    "Vague",
+    "Obscure",
+    "Blurry",
+    "Hazy"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "effectKind": "ATOMIC",
-  "effectId": "domain_inclusion",
-  "effectAxis": "Domain Inclusion",
+  "effectKey": "domain_inclusion",
+  "effectGoal": "Domain inclusion",
   "effectSubject": "Domain articulation",
   "effectMaximize": [
     "Captured",

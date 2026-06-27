@@ -11,8 +11,8 @@ Every Audit Effect specification prototype must be written as a valid JSON objec
 ```json
 {
   "effectKind": "[Uppercase Enum representing effect type/evaluation style, e.g., 'ATOMIC']",
-  "effectId": "[snake_case identifier matching file name prefix, e.g., 'expression_brevity']",
-  "effectAxis": "[Capitalized Title Case string, e.g., 'Expression Brevity']",
+  "effectKey": "[snake_case identifier matching file name prefix, e.g., 'packaging_brevity']",
+  "effectGoal": "[Sentence case string, e.g., 'Packaging brevity']",
   "effectSubject": "[Sentence case string defining the target subject of the evaluation, e.g., 'Information expressions']",
   "effectMaximize": [
     "[Unique positive aspect/metric representing constructive intent or clear information transmission]",
@@ -30,8 +30,9 @@ Every Audit Effect specification prototype must be written as a valid JSON objec
 ## 2. Formatting & Design Constraints
 
 ### A. Field-Level Rules
-* **`effectId`**: snake_case string matching the file name prefix.
-* **`effectAxis`**: Must be formatted in Title Case, defining the qualitative axis evaluated.
+* **`effectKey`**: snake_case string matching the file name prefix.
+* **`effectGoal`**: Must be formatted in Sentence case, defining the qualitative goal evaluated.
+
 * **`effectKind`**: Uppercase enum representing effect type/evaluation style (e.g., `"ATOMIC"`).
 * **`effectSubject`**: Sentence case string describing the target subject of the evaluation (e.g., `"Information expressions"`).
 * **`effectMaximize`**: Array of unique positive aspects representing constructive intent.

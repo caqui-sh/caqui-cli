@@ -1,7 +1,7 @@
 {
   "effectKind": "ATOMIC",
-  "effectId": "domain_exclusion",
-  "effectAxis": "Domain Exclusion",
+  "effectKey": "domain_exclusion",
+  "effectGoal": "Domain exclusion",
   "effectSubject": "Domain articulation",
   "effectMaximize": [
     "Focused",

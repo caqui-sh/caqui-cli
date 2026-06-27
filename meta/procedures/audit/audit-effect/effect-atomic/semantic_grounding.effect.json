@@ -1,8 +1,8 @@
 {
   "effectKind": "ATOMIC",
-  "effectId": "expression_grounding",
-  "effectAxis": "Expression Grounding",
-  "effectSubject": "Information expressions",
+  "effectKey": "semantic_grounding",
+  "effectGoal": "Semantic grounding",
+  "effectSubject": "Semantic content",
   "effectMaximize": [
     "Sound",
     "Derived",

@@ -1,0 +1,20 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "packaging_notation",
+  "effectGoal": "Notation conformance",
+  "effectSubject": "Information representation",
+  "effectMaximize": [
+    "Conforming",
+    "Compliant",
+    "Valid",
+    "Standardized",
+    "Formal"
+  ],
+  "effectMinimize": [
+    "Malformed",
+    "Invalid",
+    "Noncompliant",
+    "Anomalous",
+    "Informal"
+  ]
+}

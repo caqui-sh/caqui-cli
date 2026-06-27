@@ -1,0 +1,24 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "packaging_brevity",
+  "effectGoal": "Packaging brevity",
+  "effectSubject": "Information representation",
+  "effectMaximize": [
+    "Brief",
+    "Compact",
+    "Concise",
+    "Dense",
+    "Succinct",
+    "Laconic",
+    "Terse",
+    "Pithy"
+  ],
+  "effectMinimize": [
+    "Bloated",
+    "Turgid",
+    "Redundant",
+    "Wordy",
+    "Prolix",
+    "Verbose"
+  ]
+}
