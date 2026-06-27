@@ -1,0 +1,11 @@
+{
+  "effectKind": "ENTANGLED",
+  "effectKey": "information_fidelity",
+  "effectScope": "information_representation",
+  "effectGoal": "Information fidelity",
+  "effectSubject": "Information representation",
+  "effectEntanglement": [
+    "representation_precision",
+    "representation_brevity"
+  ]
+}

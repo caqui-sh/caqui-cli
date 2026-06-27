@@ -1,0 +1,22 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "representation_uniformity",
+  "effectScope": "information_representation",
+  "effectGoal": "Representation uniformity",
+  "effectSubject": "Information representation",
+  "effectPerspective": "Extrinsic 1-to-1 mapping-constraint from a sole semantic concept to a sole representation.",
+  "effectMaximize": [
+    "Uniform",
+    "Consistent",
+    "Standardized",
+    "Homogeneous",
+    "Systematic"
+  ],
+  "effectMinimize": [
+    "Drifted",
+    "Inconsistent",
+    "Divergent",
+    "Heterogeneous",
+    "Erratic"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "representation_fidelity",
+  "effectScope": "information_representation",
+  "effectGoal": "Representation fidelity",
+  "effectSubject": "Information representation",
+  "effectMaximize": [
+    "Faithful",
+    "Aligned",
+    "Congruent",
+    "Representative",
+    "True"
+  ],
+  "effectMinimize": [
+    "Distorted",
+    "Mismatched",
+    "Skewed",
+    "Incongruent",
+    "Divergent"
+  ]
+}

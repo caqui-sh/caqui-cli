@@ -1,6 +1,7 @@
 {
   "effectKind": "ATOMIC",
   "effectKey": "semantic_validity",
+  "effectScope": "information_semantic",
   "effectGoal": "Semantic validity",
   "effectSubject": "Semantic content",
   "effectMaximize": [

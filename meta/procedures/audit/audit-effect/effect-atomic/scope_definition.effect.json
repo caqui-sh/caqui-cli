@@ -1,0 +1,20 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "scope_definition",
+  "effectScope": "information_domain",
+  "effectGoal": "Scope definition",
+  "effectSubject": "Scope boundary",
+  "effectPerspective": "Extrinsic limit defining the scope's structural perimeter from the inside looking out.",
+  "effectMaximize": [
+    "Particular",
+    "Scoped",
+    "Unified",
+    "Cohesive"
+  ],
+  "effectMinimize": [
+    "Indistinct",
+    "Diffuse",
+    "Fractured",
+    "Disjointed"
+  ]
+}

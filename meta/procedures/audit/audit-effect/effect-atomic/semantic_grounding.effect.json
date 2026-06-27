@@ -1,6 +1,7 @@
 {
   "effectKind": "ATOMIC",
   "effectKey": "semantic_grounding",
+  "effectScope": "information_semantic",
   "effectGoal": "Semantic grounding",
   "effectSubject": "Semantic content",
   "effectMaximize": [

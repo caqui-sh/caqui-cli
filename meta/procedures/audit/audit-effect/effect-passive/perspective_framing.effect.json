@@ -1,0 +1,7 @@
+{
+  "effectKind": "PASSIVE",
+  "effectKey": "perspective_framing",
+  "effectScope": "information_perspective",
+  "effectGoal": "Perspective framing",
+  "effectSubject": "Information representation"
+}

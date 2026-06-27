@@ -1,8 +1,10 @@
 {
   "effectKind": "ATOMIC",
-  "effectKey": "domain_exclusion",
-  "effectGoal": "Domain exclusion",
+  "effectKey": "content_exclusion",
+  "effectScope": "information_domain",
+  "effectGoal": "Content exclusion",
   "effectSubject": "Domain articulation",
+  "effectPerspective": "Extrinsic segregation of the core scope from foreign concepts.",
   "effectMaximize": [
     "Focused",
     "Distinct",

@@ -1,0 +1,22 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "representation_univocality",
+  "effectScope": "information_representation",
+  "effectGoal": "Representation univocality",
+  "effectSubject": "Information representation",
+  "effectPerspective": "Intrinsic 1-to-1 mapping-constraint from a sole representation to a sole semantic concept.",
+  "effectMaximize": [
+    "Univocal",
+    "Singular",
+    "Monosemic",
+    "Unambiguous",
+    "Unique"
+  ],
+  "effectMinimize": [
+    "Equivocal",
+    "Polysemous",
+    "Multivalent",
+    "Ambiguous",
+    "Homonymous"
+  ]
+}

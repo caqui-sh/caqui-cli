@@ -1,8 +1,10 @@
 {
   "effectKind": "ATOMIC",
-  "effectKey": "domain_inclusion",
-  "effectGoal": "Domain inclusion",
+  "effectKey": "content_inclusion",
+  "effectScope": "information_domain",
+  "effectGoal": "Content inclusion",
   "effectSubject": "Domain articulation",
+  "effectPerspective": "Intrinsic aggregation of necessary constituent concepts.",
   "effectMaximize": [
     "Captured",
     "Complete",

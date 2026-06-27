@@ -1,0 +1,21 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "representation_diversity",
+  "effectScope": "information_representation",
+  "effectGoal": "Representation diversity",
+  "effectSubject": "Information representation",
+  "effectPerspective": "Extrinsic 1-to-many mapping-pattern from a sole semantic concept to multiple representations.",
+  "effectMaximize": [
+    "Diverse",
+    "Multimodal",
+    "Layered",
+    "Redundant",
+    "Rich"
+  ],
+  "effectMinimize": [
+    "Monolithic",
+    "Unimodal",
+    "Sparse",
+    "Flat"
+  ]
+}

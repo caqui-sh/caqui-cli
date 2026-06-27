@@ -1,6 +1,7 @@
 {
   "effectKind": "ATOMIC",
-  "effectKey": "packaging_notation",
+  "effectKey": "representation_notation",
+  "effectScope": "information_representation",
   "effectGoal": "Notation conformance",
   "effectSubject": "Information representation",
   "effectMaximize": [

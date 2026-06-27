@@ -1,0 +1,18 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "scope_delineation",
+  "effectScope": "information_domain",
+  "effectGoal": "Scope delineation",
+  "effectSubject": "Scope boundary",
+  "effectPerspective": "Intrinsic properties of the scope's structural perimeter.",
+  "effectMaximize": [
+    "Delimited",
+    "Intact",
+    "Continuous"
+  ],
+  "effectMinimize": [
+    "Vague",
+    "Porous",
+    "Shifting"
+  ]
+}

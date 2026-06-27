@@ -1,0 +1,20 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "representation_synonymy",
+  "effectScope": "information_representation",
+  "effectGoal": "Representation synonymy",
+  "effectSubject": "Information representation",
+  "effectPerspective": "Intrinsic many-to-1 mapping-pattern from multiple representations to a sole semantic concept.",
+  "effectMaximize": [
+    "Synonymous",
+    "Redundant",
+    "Duplicated",
+    "Overlapping"
+  ],
+  "effectMinimize": [
+    "Singular",
+    "Mononymous",
+    "Standardized",
+    "Systematic"
+  ]
+}

@@ -1,7 +1,8 @@
 {
   "effectKind": "ATOMIC",
-  "effectKey": "packaging_brevity",
-  "effectGoal": "Packaging brevity",
+  "effectKey": "representation_brevity",
+  "effectScope": "information_representation",
+  "effectGoal": "Representation brevity",
   "effectSubject": "Information representation",
   "effectMaximize": [
     "Brief",
