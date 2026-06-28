@@ -4,14 +4,16 @@
   "effectScope": "information_domain",
   "effectGoal": "Content exclusion",
   "effectSubject": "Domain articulation",
-  "effectPerspective": "Extrinsic segregation of the core scope from foreign concepts.",
+  "effectPerspective": "Segregation of the core scope from foreign concepts.",
   "effectMaximize": [
     "Focused",
     "Distinct",
     "Cohesive",
     "Pure",
     "Essential",
-    "Convergent"
+    "Convergent",
+    "Unified",
+    "Encapsulated"
   ],
   "effectMinimize": [
     "Polluted",
@@ -19,6 +21,8 @@
     "Extraneous",
     "Diluted",
     "Incongruous",
-    "Divergent"
+    "Divergent",
+    "Fractured",
+    "Exposed"
   ]
 }

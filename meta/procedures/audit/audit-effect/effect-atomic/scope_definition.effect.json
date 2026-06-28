@@ -3,18 +3,25 @@
   "effectKey": "scope_definition",
   "effectScope": "information_domain",
   "effectGoal": "Scope definition",
-  "effectSubject": "Scope boundary",
-  "effectPerspective": "Extrinsic limit defining the scope's structural perimeter from the inside looking out.",
+  "effectSubject": "Scope criteria",
+  "effectPerspective": "Articulation of the scope's criteria.",
   "effectMaximize": [
-    "Particular",
-    "Scoped",
-    "Unified",
-    "Cohesive"
+    "Tailored",
+    "Faceted",
+    "Exhaustive",
+    "Specified",
+    "Mapped",
+    "Codified",
+    "Declared",
+    "Explicit",
+    "Formulated",
+    "Compiled"
   ],
   "effectMinimize": [
     "Indistinct",
-    "Diffuse",
-    "Fractured",
-    "Disjointed"
+    "Nebulous",
+    "Haphazard",
+    "Tacit",
+    "Partial"
   ]
 }

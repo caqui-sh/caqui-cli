@@ -4,15 +4,19 @@
   "effectScope": "information_domain",
   "effectGoal": "Scope delineation",
   "effectSubject": "Scope boundary",
-  "effectPerspective": "Intrinsic properties of the scope's structural perimeter.",
+  "effectPerspective": "Delineation of the scope's boundary.",
   "effectMaximize": [
     "Delimited",
-    "Intact",
-    "Continuous"
+    "Demarcated",
+    "Shaped",
+    "Evident",
+    "Seamless"
   ],
   "effectMinimize": [
     "Vague",
-    "Porous",
-    "Shifting"
+    "Patchy",
+    "Amorphous",
+    "Obscure",
+    "Porous"
   ]
 }
