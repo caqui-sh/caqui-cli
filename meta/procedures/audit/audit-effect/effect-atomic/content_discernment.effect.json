@@ -17,7 +17,9 @@
     "Purged",
     "Winnowed",
     "Pruned",
-    "Discriminated"
+    "Discriminated",
+    "Culled",
+    "Picked"
   ],
   "effectMinimize": [
     "Indiscriminate",
