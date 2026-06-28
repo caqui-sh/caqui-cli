@@ -4,7 +4,7 @@
   "effectScope": "information_domain",
   "effectGoal": "Scope definition",
   "effectSubject": "Scope criteria",
-  "effectPerspective": "Articulation of the scope's criteria.",
+  "effectPerspective": "Exposition of the scope's criteria.",
   "effectMaximize": [
     "Tailored",
     "Faceted",
@@ -15,13 +15,30 @@
     "Declared",
     "Explicit",
     "Formulated",
-    "Compiled"
+    "Formalized",
+    "Compiled",
+    "Rigorous",
+    "Stringent",
+    "Precise",
+    "Distilled"
   ],
   "effectMinimize": [
-    "Indistinct",
     "Nebulous",
     "Haphazard",
     "Tacit",
-    "Partial"
+    "Partial",
+    "Lax",
+    "Crude",
+    "Rough",
+    "One-sided",
+    "Discretionary",
+    "Latent",
+    "Inchoate",
+    "Muddled",
+    "Loose",
+    "Slapdash",
+    "Bloated",
+    "Diluted",
+    "Convoluted"
   ]
 }
