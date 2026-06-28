@@ -6,13 +6,6 @@
   "effectSubject": "Domain articulation",
   "effectPerspective": "Preservation of core concepts within the scope's domain.",
   "effectMaximize": [
-    "Picked",
-    "Discriminated",
-    "Chosen",
-    "Extracted",
-    "Preferred",
-    "Targeted",
-    "Adopted",
     "Preserved",
     "Sustained",
     "Conserved",
@@ -22,11 +15,6 @@
     "Guarded"
   ],
   "effectMinimize": [
-    "Arbitrary",
-    "Random",
-    "Capricious",
-    "Aimless",
-    "Haphazard",
     "Lost",
     "Leaked",
     "Dropped",

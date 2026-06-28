@@ -1,0 +1,24 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "content_selection",
+  "effectScope": "information_domain",
+  "effectGoal": "Content selection",
+  "effectSubject": "Domain articulation",
+  "effectPerspective": "Selection of core concepts within the scope's domain.",
+  "effectMaximize": [
+    "Picked",
+    "Discriminated",
+    "Chosen",
+    "Extracted",
+    "Preferred",
+    "Targeted",
+    "Adopted"
+  ],
+  "effectMinimize": [
+    "Arbitrary",
+    "Random",
+    "Capricious",
+    "Aimless",
+    "Haphazard"
+  ]
+}
