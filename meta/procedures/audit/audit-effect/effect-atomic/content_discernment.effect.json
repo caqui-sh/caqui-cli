@@ -16,7 +16,8 @@
     "Ignored",
     "Purged",
     "Winnowed",
-    "Pruned"
+    "Pruned",
+    "Discriminated"
   ],
   "effectMinimize": [
     "Indiscriminate",
