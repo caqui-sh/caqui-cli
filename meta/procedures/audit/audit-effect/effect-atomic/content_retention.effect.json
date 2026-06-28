@@ -1,0 +1,36 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "content_retention",
+  "effectScope": "information_domain",
+  "effectGoal": "Content retention",
+  "effectSubject": "Domain articulation",
+  "effectPerspective": "Preservation of core concepts within the scope's domain.",
+  "effectMaximize": [
+    "Picked",
+    "Discriminated",
+    "Chosen",
+    "Extracted",
+    "Preferred",
+    "Targeted",
+    "Adopted",
+    "Preserved",
+    "Sustained",
+    "Conserved",
+    "Spared",
+    "Salvaged",
+    "Secured",
+    "Guarded"
+  ],
+  "effectMinimize": [
+    "Arbitrary",
+    "Random",
+    "Capricious",
+    "Aimless",
+    "Haphazard",
+    "Lost",
+    "Leaked",
+    "Dropped",
+    "Forfeited",
+    "Squandered"
+  ]
+}
