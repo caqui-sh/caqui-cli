@@ -1,0 +1,24 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "content_purging",
+  "effectScope": "information_domain",
+  "effectGoal": "Content purging",
+  "effectSubject": "Domain articulation",
+  "effectPerspective": "Ejection of foreign concepts from the scope's domain.",
+  "effectMaximize": [
+    "Purged",
+    "Discarded",
+    "Shelved",
+    "Bypassed",
+    "Ignored",
+    "Pruned",
+    "Culled",
+    "Castoff"
+  ],
+  "effectMinimize": [
+    "Indiscriminate",
+    "Promiscuous",
+    "Lax",
+    "Permissive"
+  ]
+}
