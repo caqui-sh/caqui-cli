@@ -4,19 +4,23 @@
   "effectScope": "information_domain",
   "effectGoal": "Scope delineation",
   "effectSubject": "Scope boundary",
-  "effectPerspective": "Delineation of the scope's boundary.",
+  "effectPerspective": "Resolution of the scope's boundary.",
   "effectMaximize": [
     "Delimited",
     "Demarcated",
     "Shaped",
     "Evident",
-    "Seamless"
+    "Taut",
+    "Mapped",
+    "Projected"
   ],
   "effectMinimize": [
-    "Vague",
-    "Patchy",
-    "Amorphous",
+    "Boundless",
     "Obscure",
-    "Porous"
+    "Amorphous",
+    "Faint",
+    "Loose",
+    "Haphazard",
+    "Drifting"
   ]
 }

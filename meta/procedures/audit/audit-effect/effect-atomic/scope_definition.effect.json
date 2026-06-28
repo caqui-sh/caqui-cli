@@ -10,7 +10,6 @@
     "Faceted",
     "Exhaustive",
     "Specified",
-    "Mapped",
     "Codified",
     "Declared",
     "Explicit",
@@ -24,7 +23,6 @@
   ],
   "effectMinimize": [
     "Nebulous",
-    "Haphazard",
     "Tacit",
     "Partial",
     "Lax",
@@ -35,10 +33,13 @@
     "Latent",
     "Inchoate",
     "Muddled",
-    "Loose",
-    "Slapdash",
     "Bloated",
     "Diluted",
-    "Convoluted"
+    "Convoluted",
+    "Negligent",
+    "Academic",
+    "Feckless",
+    "Brittle",
+    "Arcane"
   ]
 }
