@@ -1,0 +1,27 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "content_discernment",
+  "effectScope": "information_domain",
+  "effectGoal": "Content discernment",
+  "effectSubject": "Domain articulation",
+  "effectPerspective": "Filtration of foreign concepts from the scope's domain.",
+  "effectMaximize": [
+    "Discerning",
+    "Selective",
+    "Filtered",
+    "Screened",
+    "Sifted",
+    "Bypassed",
+    "Shelved",
+    "Discarded",
+    "Ignored",
+    "Purged"
+  ],
+  "effectMinimize": [
+    "Indiscriminate",
+    "Promiscuous",
+    "Lax",
+    "Permissive",
+    "Coarse"
+  ]
+}

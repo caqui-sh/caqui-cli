@@ -4,19 +4,28 @@
   "effectScope": "information_domain",
   "effectGoal": "Content inclusion",
   "effectSubject": "Domain articulation",
-  "effectPerspective": "Aggregation of necessary constituent concepts.",
+  "effectPerspective": "Assembly of necessary constituent concepts within the scope's domain.",
   "effectMaximize": [
     "Captured",
     "Complete",
     "Identified",
-    "Included",
-    "Recalled"
+    "Recalled",
+    "Populated",
+    "Aggregated",
+    "Required",
+    "Compiled",
+    "Declared",
+    "Exhaustive"
   ],
   "effectMinimize": [
     "Omitted",
-    "Ignored",
     "Overlooked",
-    "Excluded",
-    "Neglected"
+    "Neglected",
+    "Missed",
+    "Forgotten",
+    "Empty",
+    "Deficient",
+    "Absent",
+    "Partial"
   ]
 }

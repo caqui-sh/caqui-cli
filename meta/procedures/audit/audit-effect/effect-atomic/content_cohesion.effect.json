@@ -1,14 +1,13 @@
 {
   "effectKind": "ATOMIC",
-  "effectKey": "content_exclusion",
+  "effectKey": "content_cohesion",
   "effectScope": "information_domain",
-  "effectGoal": "Content exclusion",
+  "effectGoal": "Content cohesion",
   "effectSubject": "Domain articulation",
-  "effectPerspective": "Segregation of the core scope from foreign concepts.",
+  "effectPerspective": "Distillation of the scope's domain.",
   "effectMaximize": [
     "Focused",
     "Distinct",
-    "Cohesive",
     "Pure",
     "Essential",
     "Convergent",
@@ -23,6 +22,8 @@
     "Incongruous",
     "Divergent",
     "Fractured",
-    "Exposed"
+    "Contaminated",
+    "Compromised",
+    "Adulterated"
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "scope_holism",
+  "effectScope": "information_domain",
+  "effectGoal": "Scope holism",
+  "effectSubject": "Scope resonance",
+  "effectPerspective": "Coordination of the scope's posture within the context of the system.",
+  "effectMaximize": [
+    "Holistic",
+    "Cooperative",
+    "Synergistic",
+    "Harmonious",
+    "Orientated",
+    "Aligned",
+    "Attuned",
+    "Integrative",
+    "Ecological"
+  ],
+  "effectMinimize": [
+    "Siloed",
+    "Isolated",
+    "Detached",
+    "Severed",
+    "Solitary"
+  ]
+}
