@@ -6,7 +6,6 @@
   "effectSubject": "Domain articulation",
   "effectPerspective": "Filtration of foreign concepts from the scope's domain.",
   "effectMaximize": [
-    "Discerning",
     "Selective",
     "Filtered",
     "Screened",
@@ -15,7 +14,9 @@
     "Shelved",
     "Discarded",
     "Ignored",
-    "Purged"
+    "Purged",
+    "Winnowed",
+    "Pruned"
   ],
   "effectMinimize": [
     "Indiscriminate",
