@@ -1,0 +1,21 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "content_filtration",
+  "effectScope": "information_domain",
+  "effectGoal": "Content filtration",
+  "effectSubject": "Domain articulation",
+  "effectPerspective": "Screening of constituent concepts within the scope's domain.",
+  "effectMaximize": [
+    "Filtered",
+    "Screened",
+    "Sifted",
+    "Winnowed"
+  ],
+  "effectMinimize": [
+    "Indiscriminate",
+    "Promiscuous",
+    "Lax",
+    "Permissive",
+    "Coarse"
+  ]
+}

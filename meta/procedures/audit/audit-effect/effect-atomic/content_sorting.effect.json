@@ -1,0 +1,23 @@
+{
+  "effectKind": "ATOMIC",
+  "effectKey": "content_sorting",
+  "effectScope": "information_domain",
+  "effectGoal": "Content sorting",
+  "effectSubject": "Domain articulation",
+  "effectPerspective": "Classification of constituent concepts within the scope's domain.",
+  "effectMaximize": [
+    "Sorted",
+    "Classified",
+    "Segmented",
+    "Categorized",
+    "Grouped",
+    "Arranged"
+  ],
+  "effectMinimize": [
+    "Jumbled",
+    "Chaotic",
+    "Raw",
+    "Muddled",
+    "Haphazard"
+  ]
+}
