@@ -3,8 +3,8 @@
   "effectKey": "scope_definition",
   "effectScope": "information_domain",
   "effectGoal": "Scope definition",
-  "effectSubject": "Scope criteria",
-  "effectPerspective": "Articulation of the scope's criteria.",
+  "effectSubject": "Domain scope criterion",
+  "effectPerspective": "Articulation of the domain's individual scope criteria.",
   "effectMaximize": [
     "Tailored",
     "Faceted",
@@ -15,7 +15,9 @@
     "Formalized",
     "Rigorous",
     "Stringent",
-    "Precise"
+    "Precise",
+    "Stipulated",
+    "Diligent"
   ],
   "effectMinimize": [
     "Nebulous",

@@ -3,8 +3,8 @@
   "effectKey": "content_inclusion",
   "effectScope": "information_domain",
   "effectGoal": "Content inclusion",
-  "effectSubject": "Domain articulation",
-  "effectPerspective": "Assembly of necessary constituent concepts within the scope's domain.",
+  "effectSubject": "Domain content",
+  "effectPerspective": "Assembly of necessary content within the domain's scope.",
   "effectMaximize": [
     "Captured",
     "Complete",
@@ -15,7 +15,10 @@
     "Required",
     "Compiled",
     "Declared",
-    "Exhaustive"
+    "Exhaustive",
+    "Incorporated",
+    "Thorough",
+    "Mustered"
   ],
   "effectMinimize": [
     "Omitted",

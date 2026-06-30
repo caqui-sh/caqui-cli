@@ -3,8 +3,8 @@
   "effectKey": "scope_delineation",
   "effectScope": "information_domain",
   "effectGoal": "Scope delineation",
-  "effectSubject": "Scope boundary",
-  "effectPerspective": "Resolution of the scope's boundary.",
+  "effectSubject": "Domain scope boundary",
+  "effectPerspective": "Intrinsic resolution of the domain's scope boundary.",
   "effectMaximize": [
     "Delimited",
     "Demarcated",
@@ -12,15 +12,19 @@
     "Evident",
     "Taut",
     "Mapped",
-    "Projected"
+    "Projected",
+    "Differentiated"
   ],
   "effectMinimize": [
-    "Boundless",
+    "Limitless",
     "Obscure",
     "Amorphous",
     "Faint",
     "Loose",
     "Haphazard",
-    "Drifting"
+    "Drifting",
+    "Entangled",
+    "Encroaching",
+    "Disputed"
   ]
 }

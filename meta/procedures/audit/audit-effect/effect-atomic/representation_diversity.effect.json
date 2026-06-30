@@ -16,6 +16,7 @@
     "Monolithic",
     "Unimodal",
     "Sparse",
-    "Flat"
+    "Flat",
+    "Fixated"
   ]
 }

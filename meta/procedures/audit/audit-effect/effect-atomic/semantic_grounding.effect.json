@@ -3,7 +3,8 @@
   "effectKey": "semantic_grounding",
   "effectScope": "information_semantic",
   "effectGoal": "Semantic grounding",
-  "effectSubject": "Semantic content",
+  "effectSubject": "Semantic grounding",
+  "effectPerspective": "Grounding of semantic concepts in domain axioms.",
   "effectMaximize": [
     "Sound",
     "Derived",
@@ -12,7 +13,9 @@
     "Supported",
     "Nomic",
     "Systemic",
-    "Justified"
+    "Justified",
+    "A priori",
+    "Analytic"
   ],
   "effectMinimize": [
     "Specious",

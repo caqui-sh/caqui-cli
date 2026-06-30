@@ -17,6 +17,7 @@
     "Polysemous",
     "Multivalent",
     "Ambiguous",
-    "Homonymous"
+    "Homonymous",
+    "Overloaded"
   ]
 }

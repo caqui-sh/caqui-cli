@@ -77,40 +77,28 @@ To prevent design fixation and auditor anchoring, the formulated `effectPerspect
 
 ---
 
-## 3. Dual-Framing Model: Intrinsic States, Extrinsic Processes, and Negative-Space Audits
+## 3. Conceptual Paradigms: Intrinsic States vs. Extrinsic Alignment
 
-To evaluate the complete lifecycle of a domain, the audit framework supports three distinct conceptual paradigms. This multi-framing model preserves the integrity of auditing a static target asset in a vacuum while honoring the active processes and boundaries that shape information.
+To preserve the integrity of auditing a static target asset in a vacuum, the audit framework defines two conceptual paradigms for audit effects:
 
 ### A. Intrinsic State-Based Effects
 These effects evaluate the **static, qualitative, and self-contained properties** of the target asset itself in isolation.
 * **Focus**: The internal structure, quality, and composition of the specification.
 * **Examples**:
-  * `scope_definition` (articulation and rigor of rules).
-  * `content_cohesion` (distillation and qualitative purity of the internal theme).
-  * `content_inclusion` (assembly and completeness of required concepts).
+  * `scope_definition` (articulation, rigor, and quality of individual criteria in isolation).
+  * `scope_delineation` (boundary resolution).
+  * `content_inclusion` (completeness and presence of required concepts).
+  * `content_cohesion` (distillation and purity of the theme).
   * `content_organization` (classification and grouping of internal concepts).
 * **Audit Mode**: Evaluated strictly through static analysis of the target asset's internal declarations.
 
-### B. Extrinsic Process-Based Effects
-These effects evaluate the **outcomes of active pipeline transitions and processing operations** relative to the external system.
-* **Focus**: The dynamic workflow operations (like sifting, filtering, sorting, or translating) that shape the data.
+### B. Extrinsic Alignment Effects
+These effects evaluate the **outward posture and coordination** of the target asset relative to the external system.
+* **Focus**: The external alignment, compliance, and integration with the broader ecosystem.
 * **Examples**:
-  * `content_filtration` (screening input streams at the boundary).
   * `scope_holism` (coordinating external alignment and posture within the system context).
-* **Audit Mode**: Evaluated by auditing the active processing logic or the delta between input and output channels.
+* **Audit Mode**: Evaluated by analyzing the relational interfaces between the target asset and its context.
 
-### C. Negative-Space Audits (Verification through Subtraction)
-These effects represent a specialized auditing methodology where we **improve the target asset by auditing and refining its negative space (what is NOT inside it)**.
-* **Focus**: The explicit exclusion, culling, or bypassing of foreign noise, out-of-scope concepts, and edge cases.
-* **Examples**:
-  * `content_discernment` (formally ignoring/bypassing noise).
-  * `content_removal` (purging/discarding internal noise).
-  * `content_retention` (preserving core concepts from being lost during cleanup).
-* **The Complement Principle**:
-  Because the "infinite negative space" ($A^c$) around the target asset cannot be parsed directly, we **measure the negative space indirectly by auditing the target asset ($A$) itself**. This is a two-way dynamic exchange across the scope boundary:
-  * **Subtraction (Expelling)**: We improve the target asset by removing information, expelling it into the negative space (e.g. purging, pruning). We verify this by auditing the concrete **absence** of that noise in the target asset ($A \cap A^c = \emptyset$).
-  * **Addition (Drawing In)**: We improve the target asset by selecting information from the negative space and adding it to the target asset (e.g. selection, picking). We verify this by auditing the concrete **presence** of these desired target concepts inside the target asset.
-  * The maximize/minimize poles of these effects describe the target asset in these **cleansed states of mutation** (e.g., a *Pruned* spec, a *Chosen* set of criteria, or *Lost* core concepts).
 
 
 

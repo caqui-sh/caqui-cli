@@ -3,21 +3,23 @@
   "effectKey": "content_organization",
   "effectScope": "information_domain",
   "effectGoal": "Content organization",
-  "effectSubject": "Domain articulation",
-  "effectPerspective": "Intrinsic classification of constituent concepts within the scope's domain.",
+  "effectSubject": "Domain content",
+  "effectPerspective": "Classification of content within the domain's scope.",
   "effectMaximize": [
-    "Classified",
-    "Segmented",
-    "Categorized",
-    "Grouped",
     "Arranged",
-    "Structured"
+    "Ordered",
+    "Coordinated",
+    "Systematized",
+    "Tidy",
+    "Shipshape",
+    "Marshalled"
   ],
   "effectMinimize": [
     "Jumbled",
     "Chaotic",
-    "Raw",
-    "Muddled",
-    "Haphazard"
+    "Haphazard",
+    "Cluttered",
+    "Disheveled",
+    "Disarrayed"
   ]
 }

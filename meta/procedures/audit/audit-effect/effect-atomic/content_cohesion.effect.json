@@ -3,8 +3,8 @@
   "effectKey": "content_cohesion",
   "effectScope": "information_domain",
   "effectGoal": "Content cohesion",
-  "effectSubject": "Domain articulation",
-  "effectPerspective": "Distillation of the scope's domain.",
+  "effectSubject": "Domain content",
+  "effectPerspective": "Distillation of content within the domain's scope.",
   "effectMaximize": [
     "Focused",
     "Distinct",
@@ -12,7 +12,10 @@
     "Essential",
     "Convergent",
     "Unified",
-    "Encapsulated"
+    "Encapsulated",
+    "Refined",
+    "Honed",
+    "Concentrated"
   ],
   "effectMinimize": [
     "Polluted",
