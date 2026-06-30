@@ -26,6 +26,7 @@
     "Empty",
     "Deficient",
     "Absent",
-    "Partial"
+    "Partial",
+    "Cursory"
   ]
 }

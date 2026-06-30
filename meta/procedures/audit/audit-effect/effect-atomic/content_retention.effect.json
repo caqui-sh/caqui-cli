@@ -4,7 +4,7 @@
   "effectScope": "information_domain",
   "effectGoal": "Content retention",
   "effectSubject": "Domain articulation",
-  "effectPerspective": "Preservation of core concepts within the scope's domain.",
+  "effectPerspective": "Preservation of core concepts to prevent leakage into the scope's domain negative space.",
   "effectMaximize": [
     "Preserved",
     "Sustained",

@@ -4,7 +4,7 @@
   "effectScope": "information_domain",
   "effectGoal": "Content selection",
   "effectSubject": "Domain articulation",
-  "effectPerspective": "Selection of core concepts within the scope's domain.",
+  "effectPerspective": "Extraction of core concepts from the scope's domain negative space.",
   "effectMaximize": [
     "Picked",
     "Discriminated",

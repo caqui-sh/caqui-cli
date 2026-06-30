@@ -1,5 +1,5 @@
 {
-  "effectKind": "PASSIVE",
+  "effectKind": "LATENT",
   "effectKey": "perspective_framing",
   "effectScope": "information_perspective",
   "effectGoal": "Perspective framing",
