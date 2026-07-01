@@ -18,19 +18,23 @@
     "Populated",
     "Recalled",
     "Required",
+    "Teleiotic",
     "Thorough"
   ],
   "effectMinimize": [
     "Absent",
     "Cursory",
     "Deficient",
-    "Empty",
     "Fixated",
     "Forgotten",
+    "Inchoate",
+    "Latent",
     "Missed",
     "Neglected",
     "Omitted",
     "Overlooked",
-    "Partial"
+    "Partial",
+    "Sparse",
+    "Tacit"
   ]
 }

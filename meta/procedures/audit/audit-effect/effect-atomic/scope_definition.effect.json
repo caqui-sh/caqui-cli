@@ -17,7 +17,8 @@
     "Specified",
     "Stipulated",
     "Stringent",
-    "Tailored"
+    "Tailored",
+    "Teleotelic"
   ],
   "effectMinimize": [
     "Academic",
@@ -29,14 +30,11 @@
     "Dogmatic",
     "Entrenched",
     "Feckless",
-    "Inchoate",
-    "Latent",
     "Lenient",
     "Muddled",
     "Nebulous",
     "Negligent",
     "Pedantic",
-    "Rough",
-    "Tacit"
+    "Rough"
   ]
 }
