@@ -4,22 +4,23 @@
   "effectScope": "information_domain",
   "effectGoal": "Content organization",
   "effectSubject": "Domain content",
-  "effectPerspective": "Classification of content within the domain's scope.",
+  "effectPerspective": "Disposition of content within the domain's scope.",
   "effectMaximize": [
+    "Architectonic",
     "Arranged",
+    "Marshalled",
     "Ordered",
-    "Coordinated",
-    "Systematized",
-    "Tidy",
     "Shipshape",
-    "Marshalled"
+    "Systematized",
+    "Tidy"
   ],
   "effectMinimize": [
-    "Jumbled",
     "Chaotic",
-    "Haphazard",
     "Cluttered",
+    "Disarrayed",
     "Disheveled",
-    "Disarrayed"
+    "Entropic",
+    "Haphazard",
+    "Jumbled"
   ]
 }

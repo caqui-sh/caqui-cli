@@ -6,27 +6,31 @@
   "effectSubject": "Domain content",
   "effectPerspective": "Distillation of content within the domain's scope.",
   "effectMaximize": [
-    "Focused",
-    "Distinct",
-    "Pure",
-    "Essential",
+    "Concentrated",
     "Convergent",
-    "Unified",
+    "Distinct",
     "Encapsulated",
-    "Refined",
+    "Essential",
+    "Focused",
     "Honed",
-    "Concentrated"
+    "Pure",
+    "Refined",
+    "Unified"
   ],
   "effectMinimize": [
-    "Polluted",
-    "Conflated",
-    "Extraneous",
-    "Diluted",
-    "Incongruous",
-    "Divergent",
-    "Fractured",
-    "Contaminated",
+    "Adulterated",
+    "Bloated",
     "Compromised",
-    "Adulterated"
+    "Conflated",
+    "Contaminated",
+    "Diluted",
+    "Divergent",
+    "Extraneous",
+    "Fractured",
+    "Incongruous",
+    "Noxious",
+    "Parasitic",
+    "Polluted",
+    "Superfluous"
   ]
 }

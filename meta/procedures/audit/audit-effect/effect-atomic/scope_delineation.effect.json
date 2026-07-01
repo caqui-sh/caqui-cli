@@ -4,27 +4,27 @@
   "effectScope": "information_domain",
   "effectGoal": "Scope delineation",
   "effectSubject": "Domain scope boundary",
-  "effectPerspective": "Intrinsic resolution of the domain's scope boundary.",
+  "effectPerspective": "Resolution of the domain's scope boundary.",
   "effectMaximize": [
     "Delimited",
     "Demarcated",
-    "Shaped",
+    "Differentiated",
     "Evident",
-    "Taut",
     "Mapped",
     "Projected",
-    "Differentiated"
+    "Shaped",
+    "Taut"
   ],
   "effectMinimize": [
-    "Limitless",
-    "Obscure",
     "Amorphous",
-    "Faint",
-    "Loose",
-    "Haphazard",
+    "Disputed",
     "Drifting",
-    "Entangled",
     "Encroaching",
-    "Disputed"
+    "Entangled",
+    "Faint",
+    "Haphazard",
+    "Limitless",
+    "Loose",
+    "Obscure"
   ]
 }

@@ -6,30 +6,31 @@
   "effectSubject": "Domain content",
   "effectPerspective": "Assembly of necessary content within the domain's scope.",
   "effectMaximize": [
-    "Captured",
-    "Complete",
-    "Identified",
-    "Recalled",
-    "Populated",
     "Aggregated",
-    "Required",
+    "Captured",
     "Compiled",
+    "Complete",
     "Declared",
     "Exhaustive",
+    "Identified",
     "Incorporated",
-    "Thorough",
-    "Mustered"
+    "Mustered",
+    "Populated",
+    "Recalled",
+    "Required",
+    "Thorough"
   ],
   "effectMinimize": [
+    "Absent",
+    "Cursory",
+    "Deficient",
+    "Empty",
+    "Fixated",
+    "Forgotten",
+    "Missed",
+    "Neglected",
     "Omitted",
     "Overlooked",
-    "Neglected",
-    "Missed",
-    "Forgotten",
-    "Empty",
-    "Deficient",
-    "Absent",
-    "Partial",
-    "Cursory"
+    "Partial"
   ]
 }
